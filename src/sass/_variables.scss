@@ -1,10 +1,35 @@
+$transition: all 1s;
+
 /* Colors */
 $paragraph-color: #000000;
 $brand-main-color: #ff0000;
+$color-main: #ff5e57;
+$color-light: #fff;
+$color-one: #0097e6;
+$color-four: #ffffff;
 
 /* Font sizes */
 $paragraph-font-size: 16px;
 
 /* Fonts */
-$brand-font: "Open Sans", Helvetica, Arial;
-$paragraph-font: "Open Sans", Helvetica, Arial;
+$font-text: 'Josefin Sans', sans-serif;
+$font-header: 'Open Sans', sans-serif;
+
+/* global */
+body {
+    text-align: center;
+    background: #fff;
+    color: #3d3d3d;
+    font-size: 16px;
+    line-height: 1.7;
+    font-family: $font-text;
+}
+
+section {
+    padding: 108px 0;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 20px;
