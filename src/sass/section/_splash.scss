@@ -1,0 +1,54 @@
+/*Splash*/
+
+.splash {
+  height: 100vh;
+  position: relative;
+  background-image: url('https://images.pexels.com/photos/2850515/pexels-photo-2850515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-position: left right;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.splash-inner {
+  position: absolute;
+  width: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.splash i {
+  font-size: 30px;
+  background: $color-main;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  color: $color-light;
+  border-radius: 50%;
+}
+
+.page-title {
+  color: #3C3131;
+  font-size: 60px;
+  margin: 48px 0 0 0;
+  position: relative;
+  font-family: $font-header;
+}
+
+.page-title::after {
+  position: absolute;
+  content: ' ';
+  bottom: -24px;
+  left: 50%;
+  width: 100px;
+  height: 10px;
+  transform: translate(-50%);
+  background: $color-main;
+}
+
+.page-subtitle {
+  color: #3C3131;
+  font-size: 30px;
+  margin: 48px 0 0 0;
+  font-family: $font-text;
+}
