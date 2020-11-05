@@ -1,4 +1,3 @@
-$transition: all 1s;
 
 /* Colors */
 $paragraph-color: #000000;
@@ -15,7 +14,21 @@ $paragraph-font-size: 16px;
 $font-text: 'Josefin Sans', sans-serif;
 $font-header: 'Open Sans', sans-serif;
 
-/* global */
+
+/* Global */
+
+$color-main: #ff5e57;
+$color-light: #fff;
+$color-one: #0097e6;
+$color-four: #ffffff;
+$font-text: 'Josefin Sans', sans-serif;
+$font-header: 'Open Sans', sans-serif;
+$transition: all 1s;
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
 body {
   text-align: center;
   background: #fff;
@@ -35,3 +48,192 @@ section {
   padding: 0 20px;
 }
 
+/*Splash*/
+
+.splash {
+    height: 100vh;
+    position: relative;
+    background-image: url('https://images.pexels.com/photos/2850515/pexels-photo-2850515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+    background-position: left right;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.splash-inner {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.splash i {
+    font-size: 30px;
+    background: $color-main;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    color: $color-light;
+    border-radius: 50%;
+}
+.page-title {
+    color: #3C3131;
+    font-size: 60px;
+    margin: 48px 0 0 0;
+    position: relative;
+    font-family: $font-header;
+}
+.page-title::after {
+    position: absolute;
+    content: ' ';
+    bottom: -24px;
+    left: 50%;
+    width: 100px;
+    height: 10px;
+    transform: translate(-50%);
+    background: $color-main;
+}
+.page-subtitle {
+    color: #3C3131;
+    font-size: 30px;
+    margin: 48px 0 0 0;
+    font-family: $font-text;
+}
+/*Intro*/
+
+.intro {
+    background: $color-light;
+}
+.intro p {
+    width: 70%;
+    margin: 0 auto;
+    padding: 48px 0;
+    font-size: 24px;
+    border: 1px solid red;
+}
+/*About*/
+
+.section-title {
+    position: relative;
+    font-size: 36px;
+    font-family: $font-header;
+    margin: 0 0 60px 0;
+}
+.section-title::after {
+    position: absolute;
+    content: ' ';
+    bottom: -12px;
+    left: 50%;
+    width: 50px;
+    height: 10px;
+    transform: translate(-50%);
+    background: $color-main;  
+}
+.about {
+    background: #f0f0f0;
+}
+
+/*BUTTON*/
+.btn {
+    display: inline-block;
+    min-width: 160px;
+    margin: 24px auto 0 auto;
+    padding: 16px;
+    border-radius: 5px;
+    font-family: $font-text;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    border-width: 2px;
+    border-style: solid;
+    background-position: 100% 0;
+    background-size: 300%;
+}
+.btn-one {
+    border-color: $color-four;
+    color: $color-four;
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 50%);
+}
+.btn:hover {
+    background-position: 0 100%;
+    color: $color-four;
+    transition: $transition;
+}
+.btn-one:hover {
+    color: $color-main;
+}
+
+/*Skills*/
+
+[class^="skill-"] {
+    position: relative;
+}
+.skill-image {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+}
+.skill-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 1s;
+}
+.skill-right .skill-image {
+    right: 0;
+}
+.skill-right .skill-description {
+    padding: 36px 55% 36px 0;
+    text-align: right;
+}
+.skill-left .skill-description {
+    padding: 36px 0 36px 55%;
+    text-align: left;
+}
+.skill-image img:hover {
+    transform: scale(1.5);
+}
+/*Gallery*/
+
+
+.portfolio .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+.portfolio .box {
+    width: 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+    position: relative;
+}
+.portfolio .gallery-picture img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.portfolio .description {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    opacity: 0;
+    transition: .5s;
+    color: white;
+}
+.portfolio .description:hover {
+    opacity: 1;
+}
+
+/*Footer*/
+
+.page-footer {
+    background: #242424;
+    color: white;
+}
