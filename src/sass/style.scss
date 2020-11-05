@@ -6,8 +6,10 @@
 /* Components */
 @import 'components/form_field';
 @import 'components/buttons';
+@import 'components/logo';
 
 /* Sections */
+@import 'section/navigation';
 @import 'section/splash';
 @import 'section/intro';
 @import 'section/about';
