@@ -6,4 +6,32 @@
     left: 0;
     z-index: 1030;
     align-items: start;
+    display: inline-table;
   }
+
+.bottom-nav-container {
+    margin-top: auto;
+}
+.row-bottom img {
+    top: auto;
+    margin-top: 50px;
+}
+svg {
+    fill: white;
+}
+svg:hover {
+    fill: red;
+}
+.nav-main {
+}
+.general {
+    color: white;
+}
+
+.logo-img {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
+
+.icon-help {
+    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-red.svg);
+}
