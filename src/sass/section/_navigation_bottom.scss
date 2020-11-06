@@ -1,0 +1,9 @@
+/* bottom-bar */
+.fixed-bottom {
+    position: fixed;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    z-index: 1030;
+    align-items: start;
+  }

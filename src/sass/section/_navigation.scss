@@ -1,27 +1,16 @@
-/* navigation */
-
-/* global container options */
+/* global container options for top & bottom */
 *, ::after, ::before {
     box-sizing: border-box;
-}
-
-.navigation {
+  }
+  
+  .navigation {
     background-color: #343a40!important;
     display: flex;
     align-items: center;
     padding: .5rem 1rem;
-}
-
-/* topbar */
-.fixed-top {
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    z-index: 1030;
-}
-
-.navbar-brand {
+  }
+  
+  .navbar-brand {
     display: inline-block;
     padding-top: .3125rem;
     padding-bottom: .3125rem;
@@ -29,38 +18,4 @@
     font-size: 1.25rem;
     line-height: inherit;
     white-space: nowrap;
-}
-
-
-/* bottom-bar */
-.fixed-bottom {
-    position: fixed;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    z-index: 1030;
-    align-items: start;
-}
-
-/* description */
-.description {
-    color: white;
-}
-.address {
-    color: white;
-    text-align: center;
-}
-.phone {
-    color: white;
-}
-.email {
-    color: white;
-}
-@media (min-width: 768px) {
-    .navbar-expand-md {
-        -ms-flex-flow: row nowrap;
-        flex-flow: row nowrap;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-    }
-}
+  }
