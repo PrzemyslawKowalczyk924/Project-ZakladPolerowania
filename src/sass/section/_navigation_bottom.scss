@@ -16,22 +16,17 @@
     top: auto;
     margin-top: 50px;
 }
-svg {
-    fill: white;
+.ulos {
+    display: none;
+    margin: 0;
+    padding: 0;
 }
-svg:hover {
-    fill: red;
+.nav-main:hover .ulos {
+    display: block;
 }
-.nav-main {
+.nav-svg-icon {
+    filter: brightness(0) invert(1);
 }
-.general {
-    color: white;
-}
-
-.logo-img {
+.nav-svg-icon:hover {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-}
-
-.icon-help {
-    background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/3/icon-bike-red.svg);
 }
