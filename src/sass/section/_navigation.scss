@@ -6,9 +6,11 @@
 .navigation-section {
   display: flex;
 }
+
 .fixed-bottom, .hover-active {
   flex: 0 0 50%;
 }
+
 .navigation {
   background-color: #343a40!important;
   display: flex;
