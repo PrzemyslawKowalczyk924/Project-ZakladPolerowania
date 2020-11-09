@@ -23,13 +23,14 @@
 .nav-container li{
   display: block;
   position: relative;
-  padding: 15px;
+  padding: 5px;
 }
 
 .nav-svg-icon {
   margin-top: 35px;
   filter: brightness(0) invert(1);
   cursor: pointer;
+  width: 100%
 }
 
 .nav-svg-icon:hover {
