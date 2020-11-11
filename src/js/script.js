@@ -5,8 +5,13 @@ function toggleMenu(visible) {
   console.log('got it?', document);
 }
 
-document.querySelector('.nav-svg-icon').addEventListener('click', function(event){
+document.querySelector('.navigation-menu').addEventListener('click', function(event){
   event.preventDefault();
   toggleMenu();
   console.log('got it?', toggleMenu);
+});
+
+window.addEventListener('scroll', function(){
+  var navBar = document.querySelector('.navigation-menu');
+  navBar.classList.toggle('show', window.scrollY > 0);
 });
