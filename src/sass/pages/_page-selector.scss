@@ -6,10 +6,5 @@
     > .active {
       display: block;
     }
-  }
+}
 
-  .page__title {
-    @extend .h1;
-    margin: 0 0 ($base-size * 4) 0;
-    text-align: center;
-  }
