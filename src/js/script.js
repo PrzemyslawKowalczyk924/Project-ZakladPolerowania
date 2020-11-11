@@ -1,6 +1,6 @@
 'use strict';
 
-function toggleMenu(visible) {
+/*function toggleMenu(visible) {
   document.querySelector('.navigation-menu').classList.toggle('show', visible);
   console.log('got it?', document);
 }
@@ -9,7 +9,7 @@ document.querySelector('.navigation-menu').addEventListener('click', function(ev
   event.preventDefault();
   toggleMenu();
   console.log('got it?', toggleMenu);
-});
+});*/
 
 var fixedTopNav = document.querySelector('.fixed-top');
 window.addEventListener('scroll', function(){
