@@ -5,6 +5,7 @@
 
 .navigation-menu {
   display: none;
+  transition: all 0.5s;
 }
 
 .fixed-bottom, .hover-active {
@@ -30,4 +31,5 @@
 
 .show {
   display: flex;
+  transition: all 0.5s;
 }
