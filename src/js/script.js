@@ -17,6 +17,11 @@ window.addEventListener('scroll', function(){
 });
 
 window.addEventListener('scroll', function(){
-  var navBar = document.querySelector('.navigation-menu');
-  navBar.classList.toggle('show', window.scrollY > 600);
+  const navBar = document.querySelector('.navigation-menu');
+  
+  if (window.location.hash == '' || window.location.hash == '#main'){
+    navBar.classList.toggle('show', window.scrollY > 600);  
+  } else {
+    navBar.classList.add('show');
+  }
 });

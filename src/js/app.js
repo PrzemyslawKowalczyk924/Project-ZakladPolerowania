@@ -2,7 +2,7 @@
 //import { init } from 'browser-sync';
 import { select, classNames } from './settings.js';
 
-const app = {
+export const app = {
     initPages: function(){
         const thisApp = this;
 
@@ -21,6 +21,13 @@ const app = {
 
                 /* run thisApp.activePage  with that id */
                 thisApp.activatePage(id);
+                const navBar = document.querySelector('.navigation-menu');
+                if (window.location.hash == '' || window.location.hash == '#main'){
+                    navBar.classList.toggle('show', window.scrollY > 600);  
+                  } else {
+                    navBar.classList.add('show');
+                  }
+                window.location.hash = id;
             });
         }
     },
