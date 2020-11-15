@@ -20,7 +20,7 @@ window.addEventListener('scroll', function(){
   const navBar = document.querySelector('.navigation-menu');
   
   if (window.location.hash == '' || window.location.hash == '#main'){
-    navBar.classList.toggle('show', window.scrollY > 600);  
+    navBar.classList.toggle('show', window.scrollY > 3000);  
   } else {
     navBar.classList.add('show');
   }
