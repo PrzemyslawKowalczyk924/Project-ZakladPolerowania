@@ -319,9 +319,9 @@
                 <div class="container-fluid contact-wrapper">
                         <div class="row">
                             <section class="col-12 google-maps">
-                                <div class="mapouter">
-                                    <div class="gmap_canvas">
-                                        <iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=stalowa%203%20radom&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <div class="mapouter" style="width: 100%;">
+                                    <div class="gmap_canvas" style="width: 100%;">
+                                        <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=stalowa%203%20radom&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                                         <a href="https://123movies-ii.com">123movies</a>
                                     </div>
                                     <style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}.iframe {width:100%;height:100%;}</style>
@@ -330,36 +330,50 @@
                         </div>    
                         <div class="row">
                             <section class="col-6 companys-data-section">
-                                <div class="field">
-                                    <i class="logo far fa-gem"></i>
-                                    <h5>Zakład Polerowania Metali</h5>
-                                    <h6>Anna Kowalczyk</h6>
-                                    <p>ul.Stalowa 3, 26-600 Radom</p>
-                                    <p>Polska</p>
-                                    <p>tel. 505443209, 505432875</p>
-                                    <a href="#">kyczlawok.przem@dot.pl<br>anna-kowalczuk@gmail.com</a>
+                                <div class="field row">
+                                    <div class="col-6 left">
+                                        <i class="logo far fa-gem"></i>
+                                    </div>
+                                    <div class="col-6 right">
+                                        <h3 class="companys-data-name">Zakład Polerowania Metali<br>Anna Kowalczyk</h3>
+                                    </div>
+                                    <div class="col-6 left icon-in">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="col-6 right">
+                                        <p>ul.Stalowa 3, 26-600 Radom<br>Polska</p>
+                                    </div>
+                                    
+                                    <div class="col-6 left icon-in">
+                                        <i class="fas fa-phone-alt"></i>    
+                                    </div>
+                                    <div class="col-6 right">
+                                        <p>tel. 505443209<br>505432875</p>
+                                    </div>
+                                    <div class="col-6 left icon-in">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <div class="col-6 right">
+                                        <a href="#">kyczlawok.przem@dot.pl<br>anna-kowalczuk@gmail.com</a>
+                                    </div>
                                 </div>
                             </section>
                             <section class="col-6 form-section">
-                                <h2 class="section-title">Szybki kontakt</h2>
                                 <form action="" method="POST">
+                                    <h2 class="section-title">Szybki kontakt</h2>
                                     <div class="field">
-                                      <label>Imię i nazwisko</label>
-                                      <input type="text" name="user-name">
+                                      <input type="text" name="user-name" placeholder="Imię..." minlength="3">
                                     </div>
                                     <div class="field">
-                                        <label>E-mail</label>
-                                        <input type="email" name="user-name">
+                                        <input type="email" name="user-name" placeholder="E-mail...">
                                     </div>
                                     <div class="field">
-                                        <label>Temat</label>
-                                        <input type="text" name="user-name">
+                                        <input type="text" name="user-name" placeholder="Temat..." minlength="3">
                                     </div>
                                     <div class="field">
-                                      <label>Wiadomość</label>
-                                      <textarea name="message"></textarea>
+                                      <textarea name="message" placeholder="Wiadomość" minlength="3"></textarea>
                                     </div>
-                                    <button type="submit">Wyślij</button>
+                                    <button type="submit" class="btn btn-two">Wyślij</button>
                                   </form>
                             </section>
                         </div>

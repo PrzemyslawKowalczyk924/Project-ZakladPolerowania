@@ -1,20 +1,79 @@
 * {
-    box-sizing: border-box;
-  }
-/*
+  box-sizing: border-box;
+}
+
 .contact-wrapper {
-    //display: flex;
-    //height: 100vh;
+  text-align: -webkit-center;
+  padding: 0;
 }
 
 .form-section {
-    //flex: 0 0 50%;
+  padding-top: 0;
 }
 
 .google-maps {
-    text-align: -webkit-center;
+  text-align: -webkit-center;
+  width: 100%;
+  padding: 70px 0 50px 0;
 }
-.field {
-    //text-align: end;
+
+.mapouter {
+  width: 100%;
 }
-*/
+
+.gmap_canvas {
+  width: 100%;
+}
+
+.companys-data-phone {
+  text-align: center;
+}
+/* for columns text-align-last: end; */
+.companys-data-section {
+  padding-top: 0;
+}
+
+/*.companys-data-section .col-6, .col-3, .col-9 {
+  text-align-last: end;
+}*/
+
+.left {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align-last: end;
+  padding-right: 10px;
+}
+.right {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align-last: start;
+  padding-left: 10px;
+}
+
+.companys-data-name {
+    font-size: 17px;
+    margin-bottom: 0;
+}
+
+.col-6 .logo {
+  padding-right: 5px;
+}
+
+.icon-in {
+  font-size: x-large;
+  padding-right: 15px;
+}
+
+form {
+  text-align-last: end;
+  padding-right: 50%;
+}
+
+.form-section .section-title {
+  margin-left: 95px;
+}
+
+.form-section .field {
+  font-size: 18px;
+  /* dokończyć font-size na lewo i prawo w section-contact*/
+}
