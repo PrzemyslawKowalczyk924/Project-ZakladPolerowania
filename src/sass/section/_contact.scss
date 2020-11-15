@@ -9,6 +9,7 @@
 
 .form-section {
   padding-top: 0;
+  margin-top: 10.75px;
 }
 
 .google-maps {
@@ -43,6 +44,7 @@
   text-align-last: end;
   padding-right: 10px;
 }
+
 .right {
   margin-top: auto;
   margin-bottom: auto;
@@ -51,8 +53,8 @@
 }
 
 .companys-data-name {
-    font-size: 17px;
-    margin-bottom: 0;
+  font-size: 17px;
+  margin-bottom: 0;
 }
 
 .col-6 .logo {
@@ -64,16 +66,36 @@
   padding-right: 15px;
 }
 
-form {
-  text-align-last: end;
-  padding-right: 50%;
-}
 
 .form-section .section-title {
-  margin-left: 95px;
+  //margin-left: 95px;
+  font-size: 22px;
+  font-weight: bold;
+  margin: 0 0 30px 0;
+}
+
+.form-section form {
+  text-align-last: none;
+  padding: 0 25% 0 25%;
 }
 
 .form-section .field {
   font-size: 18px;
   /* dokończyć font-size na lewo i prawo w section-contact*/
+}
+
+button, input, optgroup, select, textarea {
+  width: 100%;
+  //height: 100px;
+  text-align-last: start;
+  //font-size: 80%;
+  outline-color: $color-main;
+}
+
+button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
+  background-color: #f0f0f0;
+}
+
+.form-section textarea {
+  height: 100px;
 }
