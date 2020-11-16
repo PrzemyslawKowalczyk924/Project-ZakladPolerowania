@@ -20,23 +20,3 @@
   display: flex;
   flex-wrap: wrap;
 }
-
-@media(max-width: 767px) {
-  @include grid('sm');
-
-  .page-title, .page-subtitle {
-    font-size: 30px;
-  }
-}
-  
-@media(min-width: 768px) {
-  @include grid('md');
-}
-  
-@media(min-width: 992px) {
-  @include grid('lg');
-}
-  
-@media(min-width: 1200px) {
-  @include grid('xl');
-}

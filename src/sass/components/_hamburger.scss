@@ -1,14 +1,15 @@
 .hamburger {
-    position: fixed;
-    z-index: 300;
+  position: fixed;
+  z-index: 300;
 }
 
 .hamburger-icon {
-    cursor: pointer;
-    width: 30px;
-    height: 30px;
-    margin: 22px 15px 15px 15px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  margin: 22px 15px 15px 15px;
 }
+
 .hamburger-icon:hover {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }

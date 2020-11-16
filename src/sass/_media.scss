@@ -1,0 +1,26 @@
+@media(max-width: 767px) {
+    @include grid('sm');
+  
+    .page-title {
+      font-size: 30px;
+    }
+    .page-subtitle {
+      font-size: 25px;
+    }
+    .hamburger-icon {
+      width: 20px;
+      height: 20px;
+    }
+  }
+    
+  @media(min-width: 768px) {
+    @include grid('md');
+  }
+    
+  @media(min-width: 992px) {
+    @include grid('lg');
+  }
+    
+  @media(min-width: 1200px) {
+    @include grid('xl');
+  }
