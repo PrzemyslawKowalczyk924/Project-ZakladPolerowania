@@ -34,10 +34,6 @@
   width: 100%;
 }
 
-.nav-svg-icon:hover {
-  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-}
-
 .nav-container ul ul {
   background-color: #3d3d3d;
 }
@@ -76,6 +72,9 @@
 .start:hover {
   color: yellow;
   border: 1px solid  yellow;
+  .nav-svg-icon {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+  }
 } 
 
 /* hover active */

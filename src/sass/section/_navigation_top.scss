@@ -39,52 +39,56 @@
 
 .col-of-top-nav {
   padding: 5px;
-  float: left;
   text-decoration: none;
   font-size: small;
 }
 
 /* fixed-top description */
-.title {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
+
+.navigation-menu {
+  .title {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .address {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .address i a {
+    margin-right: 5px;
+    color: white;
+  }
+  
+  .phone {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .phone i a {
+    margin-right: 5px;
+    color: white;
+  }
+  
+  .email {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .top-link {
+    color: white;
+    line-height: normal;
+    margin-right: 5px;
+    text-decoration: none;
+  }
 }
 
-.address {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
 
-.address i a {
-  margin-right: 5px;
-  color: white;
-}
-
-.phone {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
-
-.phone i a {
-  margin-right: 5px;
-  color: white;
-}
-
-.email {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
-
-.top-link {
-  color: white;
-  line-height: normal;
-  margin-right: 5px;
-  text-decoration: none;
-}
 
 @media (min-width: 768px) {
   .navbar-expand-md {
