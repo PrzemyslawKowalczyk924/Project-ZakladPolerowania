@@ -9,7 +9,18 @@ export const app = {
         thisApp.pages = document.querySelector(select.containerOf.pages).children;
         thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
-        thisApp.activatePage(thisApp.pages[0].id);
+        const idFromHash = window.location.hash.replace('#/', '');
+        
+        let pageMatchingHash = thisApp.pages[0].id;
+
+        for(let page of thisApp.pages){
+            if(page.id == idFromHash){
+                pageMatchingHash = page.id;
+                break;
+            }
+        }
+        
+        thisApp.activatePage(pageMatchingHash);
 
         for(let link of thisApp.navLinks){
             link.addEventListener('click', function(event){
@@ -21,13 +32,17 @@ export const app = {
 
                 /* run thisApp.activePage  with that id */
                 thisApp.activatePage(id);
+                /* code added with menthor */
                 const navBar = document.querySelector('.navigation-menu');
                 if (window.location.hash == '' || window.location.hash == '#main'){
                     navBar.classList.toggle('show', window.scrollY > 600);  
                   } else {
                     navBar.classList.add('show');
                   }
-                window.location.hash = id;
+                //window.location.hash = id;
+                /* end of code added with menthor */
+                /* change url hash */
+                window.location.hash = '#/' + id;
             });
         }
     },

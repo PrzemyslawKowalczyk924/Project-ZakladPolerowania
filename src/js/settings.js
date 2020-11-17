@@ -7,6 +7,9 @@ export const select = {
     nav: {
         links: '.main-nav a',
       },
+    navigation: {
+        top: '.fixed-top',
+    }  
 };
 
 export const classNames = {
@@ -15,5 +18,6 @@ export const classNames = {
       },
     nav: {
     active: 'active',
+    hide: 'hide',
     },
 };
