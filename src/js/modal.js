@@ -35,10 +35,9 @@ document.querySelector('#overlay').classList.add('show');
 document.querySelector(modal).classList.add('show');
 }
 
-const displayModal = document.querySelector('.splash');
+const displayModal = document.querySelector('.splash i');
 displayModal.addEventListener('click', function(e){
     e.preventDefault();
+    openModal('#overlay');
+    openModal('#myModal');
 });
-
-openModal('#overlay');
-openModal('#myModal');
