@@ -1,21 +1,26 @@
-.hamburger {
+/* mój styl css na hamburgera */
+/*.hamburger {
   position: fixed;
   z-index: 300;
   //left: 95%;
-}
+}*/
 
-.hamburger-icon {
+/*.hamburger-icon {
   cursor: pointer;
   width: 30px;
   height: 30px;
   margin: 22px 15px 15px 15px;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
 
   &:hover {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
   }
-}
+}*/
 
-.cancel-icon {
+/*.cancel-icon {
   display: none;
   cursor: pointer;
   width: 30px;
@@ -25,4 +30,57 @@
   &:hover {
     filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
   }
+}*/
+
+/* Style the navigation menu */
+.hamburger {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+  z-index: 99999;
+  position: fixed;
+  width: 100%;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.hamburger #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.hamburger a {
+  color: white;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  margin: 0;
+  line-height: normal;
+}
+
+/* Style the hamburger menu */
+.hamburger a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+  max-height: 70px;
+  font-size: 30px;
+}
+
+/* Add a grey background color on mouse-over */
+.hamburger a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active-hamburger {
+  color: white;
+  font-size: medium;
+}
+
+.own-design {
+  font-size: medium;
 }

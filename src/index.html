@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zakład Polerowania</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="/css/style.css">
     </head>
@@ -20,8 +21,22 @@
             </div>
           </div>
         <div class="hamburger">
-            <img class="hamburger-icon" src="images/icons/hamburger-menu.svg"/>
-            <img class="cancel-icon hide" src="images/icons/cancel.svg"/>
+            <a href="#home" class="active-hamburger">Zakład Polerowania Metali<br>Anna Kowalczyk</a>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a class="navbar-brand" href="#"><i class="logo far fa-gem"></i></a>
+                <a class="start" href="#main"/>start</a>
+                <a class="start" href="#about"/>o nas</a>
+                <a class="start" href="#offer"/>oferta</a>
+                <a class="start" href="#gallery"/>galeria</a>
+                <a class="start" href="#contact"/>kontakt</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <!-- <img class="hamburger-icon" src="images/icons/hamburger-menu.svg"/> -->
+                <!-- <img class="cancel-icon hide" src="images/icons/cancel.svg"/> -->
+            </a>
         </div>
         <nav class="navigation-menu">
             <div class="navigation fixed-top">
@@ -409,6 +424,7 @@
         </footer>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/hamburger.js"></script>
         <script src="js/canvas.js"></script>
         <script src="js/modal.js"></script>
         <script src="/js/script.js"></script>
