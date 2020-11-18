@@ -40,7 +40,7 @@ window.addEventListener('hashchange', function(){
   console.log('top', fixedTopNav);
   // eslint-disable-next-line no-constant-condition
   if ('http://localhost:3000/#/contact'){
-    fixedTopNav.classList.toggle('hide');
+    navBar.classList.toggle('hide');
     console.log('dybie, bo małe k:', actualLink);
   } else {
     console.log('coś nie pykło', actualLink);

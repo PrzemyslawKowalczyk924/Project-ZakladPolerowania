@@ -44,7 +44,30 @@
   }
 
   /* contact */
-  
+  .companys-data-section {
+    background: #f0f0f0;
+    flex: 0 0 100%;
+    padding-right: 45px;
+    & .right a {
+      font-size: 13px;
+    }
+    & .right p {
+      text-align: -webkit-left;
+    }
+  }
+  .companys-data-name {
+    font-size: 14px;
+  }
+  .google-maps {
+    background: #f0f0f0;
+  }
+  .form-section {
+    flex: 0 0 100%;
+  }
+  .page-footer .container {
+    padding: 0;
+    font-size: small;
+  }
 }
 
 @media(min-width: 425px) {
@@ -68,6 +91,7 @@
     
 @media(min-width: 992px) {
   @include grid('lg');
+
   .skills .text-sm {
     display: none;
   }
@@ -75,6 +99,7 @@
     
 @media(min-width: 1200px) {
   @include grid('xl');
+
   .skills .text-sm {
     display: none;
   }
