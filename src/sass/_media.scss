@@ -44,6 +44,9 @@
   }
 
   /* contact */
+  .navigation-menu {
+    display: none;
+  }
   .companys-data-section {
     background: #f0f0f0;
     flex: 0 0 100%;
@@ -86,6 +89,9 @@
   @include grid('md');
   /* main section */
   /* skills */
+  .hamburger {
+    display: none;
+  }
   .skills .text-sm {
     display: none;
   }
@@ -97,7 +103,9 @@
     
 @media(min-width: 992px) {
   @include grid('lg');
-
+  .hamburger {
+    display: none;
+  }
   .skills .text-sm {
     display: none;
   }
@@ -105,7 +113,9 @@
     
 @media(min-width: 1200px) {
   @include grid('xl');
-
+  .hamburger {
+    display: none;
+  }
   .skills .text-sm {
     display: none;
   }
