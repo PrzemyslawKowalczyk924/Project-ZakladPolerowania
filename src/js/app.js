@@ -32,16 +32,8 @@ export const app = {
 
                 /* run thisApp.activePage  with that id */
                 thisApp.activatePage(id);
-                /* code added with menthor */
-                const navBar = document.querySelector('.navigation-menu');
-                if (window.location.hash == '' || window.location.hash == '#main'){
-                    navBar.classList.toggle('show', window.scrollY > 600);  
-                  } else {
-                    navBar.classList.add('show');
-                  }
-                //window.location.hash = id;
-                /* end of code added with menthor */
-                /* change url hash */
+                
+
                 window.location.hash = '#/' + id;
             });
         }
@@ -60,6 +52,24 @@ export const app = {
             link.getAttribute('href') == '#' + pageId
             );
         }
+                
+        /* code added with menthor */
+        const navBar = document.querySelector('.navigation-menu');
+                if (window.location.hash == '' || window.location.hash == '#main'){
+                    navBar.classList.toggle('show', window.scrollY > 600);  
+                  } else {
+                    navBar.classList.add('show');
+                  }
+                //window.location.hash = id;
+                /* end of code added with menthor */
+                /* change url hash */
+                //debugger;
+
+                if(pageId == 'contact'){
+                    navBar.classList.add('nav-contact');
+                } else {
+                   navBar.classList.remove('nav-contact');
+                }
     },
 
     init: function(){
