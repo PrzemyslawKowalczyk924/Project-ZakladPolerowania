@@ -117,10 +117,10 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 @media(min-width: 768px) {
-  
   .nav-contact {
     display: block;
   }
+
   .nav-contact .nav-container {
     display: flex;
     width: 100vw;
@@ -135,29 +135,29 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 
   .nav-contact .nav-container li {
-      display: flex;
-      position: relative;
-      padding: -5px;
-      flex-wrap: wrap;
+    display: flex;
+    position: relative;
+    padding: -5px;
+    flex-wrap: wrap;
   }
 
-    .nav-contact .nav-svg-icon {
-      filter: brightness(0) invert(1);
-      cursor: pointer;
-      width: 25%;
-      margin-top: 0;
-    }  
+  .nav-contact .nav-svg-icon {
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    width: 25%;
+    margin-top: 0;
+  }  
   
-    .nav-contact .fixed-top {
-      display: none;
-    }
-
-    .nav-contact .fixed-bottom {
-      height: 70px;
-    }
-
-    .nav-contact .navbar-brand {
-      display: flex;
-    }
-
+  .nav-contact .fixed-top {
+    display: none;
   }
+
+  .nav-contact .fixed-bottom {
+    height: 70px;
+  }
+
+  .nav-contact .navbar-brand {
+    display: flex;
+  }
+
+}
