@@ -70,6 +70,11 @@ export const app = {
                 } else {
                    navBar.classList.remove('nav-contact');
                 }
+
+                if(pageId == 'gallery' || pageId == 'about' || pageId == 'offer'){
+                    navBar.classList.remove('hide');
+                    console.log('zadziałało!!!');
+                }
     },
 
     init: function(){

@@ -58,6 +58,9 @@
   align-content: flex-end;
 }
 
+.nav-svg-icon:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
+}
 .start {
   font-size: large;
   color: white;

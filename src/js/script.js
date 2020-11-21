@@ -7,6 +7,7 @@ window.addEventListener('scroll', function(){
     navBar.classList.toggle('show', (window.innerHeight + window.scrollY) >= document.body.offsetHeight);  
   } else {
     navBar.classList.add('show');
+    console.log('zadziałał show z linijki 11');
   }
 });
 
@@ -22,10 +23,10 @@ window.addEventListener('hashchange', function(){
   const fixedTopNav = document.querySelector('.fixed-top');
   console.log('top', fixedTopNav);
   // eslint-disable-next-line no-constant-condition
-  if ('http://localhost:3000/#/contact'){
+  if (window.location.hash == 'http://localhost:3000/#/contact'){
     document.getElementById('myLinks').style.display = 'block';
     console.log('bajzel!!!!!');
-    navBar.classList.toggle('hide');
+    navBar.classList.add('hide');
     console.log('dybie, bo' + actualLink + 'to sekcja kontakt');
   } else {
     console.log('coś nie pykło', actualLink);
