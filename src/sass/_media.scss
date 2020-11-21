@@ -38,6 +38,18 @@
     display: block;
   }
 
+  div#offer {
+    & .container {
+      padding: 45px 20px;
+    }
+    & iframe {
+      position: inherit;
+    }
+    & canvas {
+      margin: 25px 0 25px 0;
+    }
+  }
+
   /* portfolio */
   .portfolio .box {
     flex: 0 0 100%;
