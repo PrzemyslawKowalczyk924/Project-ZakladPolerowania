@@ -24,12 +24,18 @@ window.addEventListener('hashchange', function(){
   console.log('top', fixedTopNav);
   // eslint-disable-next-line no-constant-condition
   if (window.location.hash == 'http://localhost:3000/#/contact'){
-    document.getElementById('myLinks').style.display = 'block';
+    //document.getElementById('myLinks').style.display = 'block';
     console.log('bajzel!!!!!');
     navBar.classList.add('hide');
     console.log('dybie, bo' + actualLink + 'to sekcja kontakt');
   } else {
     console.log('coś nie pykło', actualLink);
+    //document.getElementById('myLinks').style.display = 'none';
+  }
+
+  if(window.location.hash == 'http://localhost:3000/#/gallery'){
+    document.getElementById('myLinks').style.display = 'none';
+    console.log('zadziabałoooooo');
   }
 });
 

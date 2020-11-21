@@ -33,7 +33,6 @@ export const app = {
                 /* run thisApp.activePage  with that id */
                 thisApp.activatePage(id);
                 
-
                 window.location.hash = '#/' + id;
             });
         }
@@ -82,6 +81,15 @@ export const app = {
                 navBar.classList.remove('hide');
                 console.log('zadziałało!!!');
             }
+
+            if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'){
+                document.getElementById('myLinks').style.display = 'none';
+            }
+
+            if(pageId == 'javascript:void(0);'){
+                console.log('przynajmniej dybie');
+            }
+
     },
 
     init: function(){
