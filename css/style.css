@@ -439,10 +439,8 @@ template {
 }
 
 .row {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 /* Components */
@@ -621,16 +619,13 @@ template {
 }
 
 .fixed-bottom, .hover-active {
-  -ms-flex: 0 0 50%;
-      flex: 0 0 50%;
+  flex: 0 0 50%;
 }
 
 .navigation {
   background-color: #343a40 !important;
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   padding: .5rem 1rem;
 }
 
@@ -643,13 +638,11 @@ template {
 }
 
 .show {
-  display: -ms-flexbox;
   display: flex;
   opacity: 1;
 }
 
 .show-hamburger {
-  display: -ms-flexbox;
   display: flex;
   opacity: 1;
 }
@@ -676,21 +669,17 @@ template {
   
 }*/
 .top-nav-container {
-  display: -ms-inline-flexbox;
   display: inline-flex;
   margin-left: auto;
 }
 
 .row-top {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-direction: row;
-      flex-direction: row;
+  flex-direction: row;
 }
 
 .row-top i {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   text-align: center;
   margin: auto 5px;
   margin-right: 10px;
@@ -752,8 +741,7 @@ template {
   top: 0;
   left: 0;
   z-index: 1030;
-  -ms-flex-align: start;
-      align-items: start;
+  align-items: start;
   display: inline-table;
   max-width: 62px;
   width: 62px;
@@ -787,10 +775,8 @@ template {
 }
 
 .nav-container ul ul li {
-  display: -ms-inline-flexbox;
   display: inline-flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  flex-wrap: nowrap;
   margin: auto;
   padding: 0;
 }
@@ -801,15 +787,15 @@ template {
   height: 100px;
   width: 120px;
   display: -ms-grid;
-  display: -ms-flexbox;
   display: flex;
   text-align: -webkit-center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-line-pack: end;
-      align-content: flex-end;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+.nav-svg-icon:hover {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
 .start {
@@ -838,19 +824,16 @@ template {
   top: 21px;
   left: 62px;
   z-index: 1030;
+  -ms-transform: translateY(0%);
   transform: translateY(0%);
-  -ms-flex-align: center;
-      align-items: center;
+  align-items: center;
   display: none;
   text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-flex-pack: end;
-      justify-content: end;
+  align-content: center;
+  justify-content: end;
 }
 
 .nav-container li:hover ul {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -997,16 +980,13 @@ template {
 }
 
 .portfolio .wrapper {
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .portfolio .box {
   width: 33.33333333333333%;
-  -ms-flex: 0 0 33.33333333333333%;
-      flex: 0 0 33.33333333333333%;
+  flex: 0 0 33.33333333333333%;
   position: relative;
 }
 
@@ -1024,14 +1004,10 @@ template {
   top: 0;
   left: 0;
   background: rgba(0, 0, 0, 0.5);
-  display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
-  -ms-flex-direction: column;
-      flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   opacity: 0;
   transition: .5s;
   color: white;
@@ -1039,6 +1015,25 @@ template {
 
 .portfolio .description:hover {
   opacity: 1;
+}
+
+/* .js sub-page section */
+.sub-gallery {
+  display: block;
+}
+
+.sub-gallery .container {
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+.sub-gallery .portfolio {
+  padding: 108px 0 0 0;
+}
+
+.sub-gallery .box {
+  flex: 0 0 50%;
 }
 
 /*Footer*/
@@ -1173,32 +1168,50 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
     display: block;
   }
   .nav-contact .nav-container {
-    display: -ms-flexbox;
     display: flex;
     width: 100vw;
-    -ms-flex-pack: end;
-        justify-content: flex-end;
+    justify-content: flex-end;
   }
   .nav-contact .nav-container ul {
-    height: 70px;
-    display: -ms-inline-flexbox;
     display: inline-flex;
     position: absolute;
     top: 0px;
+    align-items: center;
+    margin: 0;
+    height: 70px;
   }
   .nav-contact .nav-container li {
-    display: -ms-flexbox;
     display: flex;
     position: relative;
-    padding: -5px;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin: 0 30px 0 30px;
+    left: -11px;
+    height: 70px;
+  }
+  .nav-contact .nav-container ul li ul {
+    display: none;
+    top: 45px;
+    left: -45px;
+    height: 120px;
+    width: 100px;
+  }
+  .nav-contact .nav-container ul li:hover ul {
+    display: flex;
+  }
+  .nav-contact .nav-container ul ul {
+    background-color: transparent;
+    height: 120px;
+    width: 100px;
   }
   .nav-contact .nav-svg-icon {
     filter: brightness(0) invert(1);
     cursor: pointer;
-    width: 25%;
+    width: 45px;
+    height: 50px;
     margin-top: 0;
+  }
+  .nav-contact .nav-svg-icon:hover {
+    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
   }
   .nav-contact .fixed-top {
     display: none;
@@ -1207,9 +1220,23 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
     height: 70px;
   }
   .nav-contact .navbar-brand {
-    display: -ms-flexbox;
-    display: flex;
+    display: inherit;
+    margin-left: 15px;
+    padding-top: 15px;
   }
+  .nav-contact .navbar-brand .logo {
+    font-size: 20px;
+    background: #ff5e57;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    border-radius: 50%;
+  }
+}
+
+#offer .section-title {
+  margin-top: 100px;
 }
 
 /* Pages / Views */
@@ -1224,63 +1251,51 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 /* Media */
 @media (max-width: 767px) {
   .col-sm-1 {
-    -ms-flex: 0 0 8.33333%;
-        flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
     max-width: 8.33333%;
   }
   .col-sm-2 {
-    -ms-flex: 0 0 16.66667%;
-        flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
     max-width: 16.66667%;
   }
   .col-sm-3 {
-    -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .col-sm-4 {
-    -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   .col-sm-5 {
-    -ms-flex: 0 0 41.66667%;
-        flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
   .col-sm-6 {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
   .col-sm-7 {
-    -ms-flex: 0 0 58.33333%;
-        flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
     max-width: 58.33333%;
   }
   .col-sm-8 {
-    -ms-flex: 0 0 66.66667%;
-        flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
     max-width: 66.66667%;
   }
   .col-sm-9 {
-    -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
   .col-sm-10 {
-    -ms-flex: 0 0 83.33333%;
-        flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
     max-width: 83.33333%;
   }
   .col-sm-11 {
-    -ms-flex: 0 0 91.66667%;
-        flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
     max-width: 91.66667%;
   }
   .col-sm-12 {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
   /* Main section*/
@@ -1312,10 +1327,18 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .skills .text-sm {
     display: block;
   }
+  div#offer .container {
+    padding: 45px 20px;
+  }
+  div#offer iframe {
+    position: inherit;
+  }
+  div#offer canvas {
+    margin: 25px 0 25px 0;
+  }
   /* portfolio */
   .portfolio .box {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
   }
   /* contact */
   .navigation-menu {
@@ -1323,8 +1346,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
   .companys-data-section {
     background: #f0f0f0;
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
     padding-right: 45px;
   }
   .companys-data-section .right a {
@@ -1340,8 +1362,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
     background: #f0f0f0;
   }
   .form-section {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
   }
   .page-footer .container {
     padding: 0;
@@ -1351,70 +1372,57 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 
 @media (min-width: 425px) {
   .portfolio .box {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
   }
 }
 
 @media (min-width: 768px) {
   .col-md-1 {
-    -ms-flex: 0 0 8.33333%;
-        flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
     max-width: 8.33333%;
   }
   .col-md-2 {
-    -ms-flex: 0 0 16.66667%;
-        flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
     max-width: 16.66667%;
   }
   .col-md-3 {
-    -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .col-md-4 {
-    -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   .col-md-5 {
-    -ms-flex: 0 0 41.66667%;
-        flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
   .col-md-6 {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
   .col-md-7 {
-    -ms-flex: 0 0 58.33333%;
-        flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
     max-width: 58.33333%;
   }
   .col-md-8 {
-    -ms-flex: 0 0 66.66667%;
-        flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
     max-width: 66.66667%;
   }
   .col-md-9 {
-    -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
   .col-md-10 {
-    -ms-flex: 0 0 83.33333%;
-        flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
     max-width: 83.33333%;
   }
   .col-md-11 {
-    -ms-flex: 0 0 91.66667%;
-        flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
     max-width: 91.66667%;
   }
   .col-md-12 {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
   /* main section */
@@ -1427,70 +1435,60 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
   /*portfolio */
   .portfolio .box {
-    -ms-flex: 0 0 33.33333333333333%;
-        flex: 0 0 33.33333333333333%;
+    flex: 0 0 33.33333333333333%;
+  }
+  .sub-gallery .box {
+    flex: 0 0 50%;
   }
 }
 
 @media (min-width: 992px) {
   .col-lg-1 {
-    -ms-flex: 0 0 8.33333%;
-        flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
     max-width: 8.33333%;
   }
   .col-lg-2 {
-    -ms-flex: 0 0 16.66667%;
-        flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
     max-width: 16.66667%;
   }
   .col-lg-3 {
-    -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .col-lg-4 {
-    -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   .col-lg-5 {
-    -ms-flex: 0 0 41.66667%;
-        flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
   .col-lg-6 {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
   .col-lg-7 {
-    -ms-flex: 0 0 58.33333%;
-        flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
     max-width: 58.33333%;
   }
   .col-lg-8 {
-    -ms-flex: 0 0 66.66667%;
-        flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
     max-width: 66.66667%;
   }
   .col-lg-9 {
-    -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
   .col-lg-10 {
-    -ms-flex: 0 0 83.33333%;
-        flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
     max-width: 83.33333%;
   }
   .col-lg-11 {
-    -ms-flex: 0 0 91.66667%;
-        flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
     max-width: 91.66667%;
   }
   .col-lg-12 {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
   .hamburger {
@@ -1503,63 +1501,51 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 
 @media (min-width: 1200px) {
   .col-xl-1 {
-    -ms-flex: 0 0 8.33333%;
-        flex: 0 0 8.33333%;
+    flex: 0 0 8.33333%;
     max-width: 8.33333%;
   }
   .col-xl-2 {
-    -ms-flex: 0 0 16.66667%;
-        flex: 0 0 16.66667%;
+    flex: 0 0 16.66667%;
     max-width: 16.66667%;
   }
   .col-xl-3 {
-    -ms-flex: 0 0 25%;
-        flex: 0 0 25%;
+    flex: 0 0 25%;
     max-width: 25%;
   }
   .col-xl-4 {
-    -ms-flex: 0 0 33.33333%;
-        flex: 0 0 33.33333%;
+    flex: 0 0 33.33333%;
     max-width: 33.33333%;
   }
   .col-xl-5 {
-    -ms-flex: 0 0 41.66667%;
-        flex: 0 0 41.66667%;
+    flex: 0 0 41.66667%;
     max-width: 41.66667%;
   }
   .col-xl-6 {
-    -ms-flex: 0 0 50%;
-        flex: 0 0 50%;
+    flex: 0 0 50%;
     max-width: 50%;
   }
   .col-xl-7 {
-    -ms-flex: 0 0 58.33333%;
-        flex: 0 0 58.33333%;
+    flex: 0 0 58.33333%;
     max-width: 58.33333%;
   }
   .col-xl-8 {
-    -ms-flex: 0 0 66.66667%;
-        flex: 0 0 66.66667%;
+    flex: 0 0 66.66667%;
     max-width: 66.66667%;
   }
   .col-xl-9 {
-    -ms-flex: 0 0 75%;
-        flex: 0 0 75%;
+    flex: 0 0 75%;
     max-width: 75%;
   }
   .col-xl-10 {
-    -ms-flex: 0 0 83.33333%;
-        flex: 0 0 83.33333%;
+    flex: 0 0 83.33333%;
     max-width: 83.33333%;
   }
   .col-xl-11 {
-    -ms-flex: 0 0 91.66667%;
-        flex: 0 0 91.66667%;
+    flex: 0 0 91.66667%;
     max-width: 91.66667%;
   }
   .col-xl-12 {
-    -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
   }
   .hamburger {
@@ -1583,17 +1569,14 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
-  -ms-flex-pack: center;
-      justify-content: center;
-  -ms-flex-align: center;
-      align-items: center;
+  justify-content: center;
+  align-items: center;
   overflow: auto;
   padding: 30px;
   display: none;
 }
 
 .overlay.show {
-  display: -ms-flexbox;
   display: flex;
 }
 
@@ -1621,4 +1604,5 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   padding: 5px 10px;
   cursor: pointer;
 }
+
 /*# sourceMappingURL=style.css.map */

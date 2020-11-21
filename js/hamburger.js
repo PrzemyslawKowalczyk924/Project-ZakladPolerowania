@@ -16,17 +16,24 @@ function closeHamburger() {
 }
 
 /* method to close modal by clicking on background */
-document.querySelector('#myLinks').addEventListener('click', function(e) {
-    if(e.target === this) {
+document.querySelector('#myLinks').addEventListener('click', function(event) {
+    if(event.target === this) {
         console.log('keyUP działa!!!');
         closeHamburger();
     }
 });
 
 /* method to close modal by hiting ESC key */
-document.addEventListener('keyup', function(e) {
-    if(e.keyCode === 27) {
+document.addEventListener('keyup', function(event) {
+    if(event.keyCode === 27) {
         console.log('keyUP działa!!!');
         closeHamburger();
     }
+});
+
+document.querySelector('#myLinks').addEventListener('hashchange', function(event){
+   if(window.location.hash == 'http://localhost:3000/#/main'){
+        closeHamburger();
+        console.log('działa jak powinno bracie! :)');
+   } 
 });
