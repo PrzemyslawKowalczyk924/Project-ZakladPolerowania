@@ -55,26 +55,33 @@ export const app = {
                 
         /* code added with menthor */
         const navBar = document.querySelector('.navigation-menu');
-                if (window.location.hash == '' || window.location.hash == '#main'){
-                    navBar.classList.toggle('show', window.scrollY > 600);  
-                  } else {
-                    navBar.classList.add('show');
-                  }
-                //window.location.hash = id;
-                /* end of code added with menthor */
-                /* change url hash */
-                //debugger;
-
-                if(pageId == 'contact'){
-                    navBar.classList.add('nav-contact');
+        const galleryBar = document.getElementById('gallery');
+            if (window.location.hash == '' || window.location.hash == '#main'){
+                navBar.classList.toggle('show', window.scrollY > 600);  
                 } else {
-                   navBar.classList.remove('nav-contact');
+                navBar.classList.add('show');
                 }
+            //window.location.hash = id;
+            /* end of code added with menthor */
+            /* change url hash */
+            //debugger;
 
-                if(pageId == 'gallery' || pageId == 'about' || pageId == 'offer'){
-                    navBar.classList.remove('hide');
-                    console.log('zadziałało!!!');
-                }
+            if(pageId == 'contact'){
+                navBar.classList.add('nav-contact');
+            } else {
+                navBar.classList.remove('nav-contact');
+            }
+
+            if(pageId == 'gallery'){
+                galleryBar.classList.add('sub-gallery');
+            } else {
+                galleryBar.classList.remove('sub-gallery');
+            }
+
+            if(pageId == 'gallery' || pageId == 'about' || pageId == 'offer'){
+                navBar.classList.remove('hide');
+                console.log('zadziałało!!!');
+            }
     },
 
     init: function(){

@@ -101,6 +101,10 @@
   .portfolio .box {
     flex: 0 0 33.33333333333333%;
   }
+
+  .sub-gallery .box {
+    flex: 0 0 50%;
+  }
 }
     
 @media(min-width: 992px) {
