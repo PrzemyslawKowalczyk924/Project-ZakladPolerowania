@@ -1,0 +1,44 @@
+/* global container options for top & bottom */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+.navigation-menu {
+  opacity: 0;
+  transition: 0.6s;
+}
+
+.fixed-bottom, .hover-active {
+  flex: 0 0 50%;
+}
+
+.navigation {
+  background-color: #343a40!important;
+  display: flex;
+  align-items: center;
+  padding: .5rem 1rem;
+}
+  
+.navbar-brand {
+  display: inline-block;
+  padding-top: 1.3125rem;
+  //padding-bottom: .3125rem;
+  //margin-right: 1rem;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
+}
+
+.show {
+  display: flex;
+  opacity: 1;
+}
+
+.show-hamburger {
+  display: flex;
+  opacity: 1;
+}
+
+.hide {
+  display: none;
+}

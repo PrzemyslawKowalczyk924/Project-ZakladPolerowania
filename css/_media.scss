@@ -1,0 +1,147 @@
+@media(max-width: 767px) {
+  @include grid('sm');
+  
+  /* Main section*/
+  /* Header */
+  .page-title {
+    font-size: 30px;
+  }
+
+  .page-subtitle {
+    font-size: 25px;
+  }
+
+  .hamburger-icon {
+    width: 20px;
+    height: 20px;
+  }
+
+  /* skills */
+  .skills .skill-image {
+    height: 100%;
+  }
+
+  .skills .skill-description {
+    padding: 5px 5px 5px 55%;
+  }
+
+  .skill-right .skill-description {
+    padding: 5px 55% 5px 5px;
+    text-align: right;
+  }
+
+  .skills .text-lg {
+    display: none;
+  }
+
+  .skills .text-sm {
+    display: block;
+  }
+
+  div#offer {
+    .container {
+      padding: 45px 20px;
+    }
+
+    iframe {
+      position: inherit;
+    }
+
+    canvas {
+      margin: 25px 0 25px 0;
+    }
+  }
+
+  /* portfolio */
+  .portfolio .box {
+    flex: 0 0 100%;
+  }
+
+  /* contact */
+  .navigation-menu {
+    display: none;
+  }
+
+  .companys-data-section {
+    background: #f0f0f0;
+    flex: 0 0 100%;
+    padding-right: 45px;
+  }
+
+  .companys-data-section .right a {
+    font-size: 13px;
+  }
+
+  .companys-data-section .right p {
+    text-align: -webkit-left;
+  }
+
+  .companys-data-name {
+    font-size: 14px;
+  }
+
+  .google-maps {
+    background: #f0f0f0;
+  }
+
+  .form-section {
+    flex: 0 0 100%;
+  }
+
+  .page-footer .container {
+    padding: 0;
+    font-size: small;
+  }
+}
+
+@media(min-width: 425px) {
+  .portfolio .box {
+    flex: 0 0 50%;
+  }
+}
+
+@media(min-width: 768px) {
+  @include grid('md');
+  /* main section */
+  /* skills */
+  .hamburger {
+    display: none;
+  }
+
+  .skills .text-sm {
+    display: none;
+  }
+  /*portfolio */
+  .portfolio .box {
+    flex: 0 0 33.33333333333333%;
+  }
+
+  .sub-gallery .box {
+    flex: 0 0 50%;
+  }
+}
+    
+@media(min-width: 992px) {
+  @include grid('lg');
+
+  .hamburger {
+    display: none;
+  }
+
+  .skills .text-sm {
+    display: none;
+  }
+}
+    
+@media(min-width: 1200px) {
+  @include grid('xl');
+
+  .hamburger {
+    display: none;
+  }
+
+  .skills .text-sm {
+    display: none;
+  }
+  
+}

@@ -1,0 +1,89 @@
+/* global container options for top & bottom */
+*, ::after, ::before {
+  box-sizing: border-box;
+}
+
+/* only for topbar navigation */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+/*.top-slider {
+  
+}*/
+
+.top-nav-container {
+  //border: 5px solid #1abc9c;
+  //max-width: 500px;
+  //margin: 0 auto;
+  display: inline-flex;
+  margin-left: auto;
+}
+
+.row-top {
+  display: flex;
+  flex-direction: row;
+}
+
+.row-top i {
+  align-content: center;
+  text-align: center;
+  margin: auto 5px;
+  margin-right: 10px;
+  font-size: x-large;
+}
+
+.col-of-top-nav {
+  padding: 5px;
+  text-decoration: none;
+  font-size: small;
+}
+
+/* fixed-top description */
+
+.navigation-menu {
+  .title {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .address {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .address i a {
+    margin-right: 5px;
+    color: white;
+  }
+  
+  .phone {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .phone i a {
+    margin-right: 5px;
+    color: white;
+  }
+  
+  .email {
+    border-right: 1px solid white;
+    color: white;
+    line-height: normal;
+  }
+  
+  .top-link {
+    color: white;
+    line-height: normal;
+    margin-right: 5px;
+    text-decoration: none;
+  }
+}
