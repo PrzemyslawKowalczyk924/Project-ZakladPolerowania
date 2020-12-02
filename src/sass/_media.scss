@@ -39,13 +39,15 @@
   }
 
   div#offer {
-    & .container {
+    .container {
       padding: 45px 20px;
     }
-    & iframe {
+
+    iframe {
       position: inherit;
     }
-    & canvas {
+
+    canvas {
       margin: 25px 0 25px 0;
     }
   }
