@@ -6,6 +6,8 @@
 .navigation-menu {
   opacity: 0;
   transition: 0.6s;
+  position: sticky;
+  z-index: 9;
 }
 
 .fixed-bottom, .hover-active {
