@@ -1,0 +1,31 @@
+/* Abilities*/
+
+.abilities {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.abilities p {
+    margin: 15px;
+    flex: 0 0 50%;
+    border: 1px solid red;
+    max-width: 500px;
+    max-height: 350px;
+    height: 100%;
+    width: 100%;
+    padding: 48px 0;
+    font-size: 24px;
+}
+
+.abilities p i {
+    margin: 5px;
+}
+
+.abilities p i {
+    margin: 5px;
+}
+
+.abilities span {
+    margin: 5px;
+}
