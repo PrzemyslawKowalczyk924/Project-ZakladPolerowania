@@ -1,9 +1,14 @@
 'use strict';
 
+const mainSideHamburger = document.querySelector('.main-side-hamburger');
+mainSideHamburger.addEventListener('click', function(){
+  navBar.classList.toggle('show');
+});
+
 const navBar = document.querySelector('.navigation-menu');
 window.addEventListener('scroll', function(){
   
-  if (window.location.hash == '' || window.location.hash == '#main'){
+  if (window.location.hash == '' || window.location.hash == '#/main'){
     navBar.classList.toggle('show', (window.innerHeight + window.scrollY) >= document.body.offsetHeight);  
   } else {
     navBar.classList.add('show');
@@ -16,7 +21,7 @@ console.log('what the Link?', actualLink);
 
 const hamburgerNav = document.querySelector('.hamburger');
 hamburgerNav.addEventListener('click', function(){
-  navBar.classList.toggle('show-hamburger');
+  navBar.classList.toggle('show');
 });
 
 window.addEventListener('hashchange', function(){

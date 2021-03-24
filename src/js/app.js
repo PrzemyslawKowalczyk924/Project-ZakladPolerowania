@@ -31,9 +31,9 @@ export const app = {
                 const id = clickedElement.getAttribute('href').replace('#', '');
 
                 /* run thisApp.activePage  with that id */
-                thisApp.activatePage(id);
-                
                 window.location.hash = '#/' + id;
+                
+                thisApp.activatePage(id);
             });
         }
     },
@@ -55,7 +55,7 @@ export const app = {
         /* code added with menthor */
         const navBar = document.querySelector('.navigation-menu');
         const galleryBar = document.getElementById('gallery');
-            if (window.location.hash == '' || window.location.hash == '#main'){
+            if (window.location.hash == '' || window.location.hash == '#/main'){
                 navBar.classList.toggle('show', window.scrollY > 600);  
                 } else {
                 navBar.classList.add('show');
