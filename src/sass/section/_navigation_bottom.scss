@@ -14,6 +14,7 @@
 
 .nav-container ul {
   padding: 0;
+  align-items: flex-end;
 }
 
 .nav-container li{
@@ -25,6 +26,7 @@
   filter: brightness(0) invert(1);
   cursor: pointer;
   width: 25%;
+  height: 50%;
 }
 
 /* #branch {
@@ -65,7 +67,6 @@
   margin: auto;
   line-height: 15px;
   height: 100px;
-  width: 120px;
   display: -ms-grid;
   display: flex;
   text-align: -webkit-center;
@@ -102,23 +103,13 @@
 
 .nav-container li ul {
   position: absolute;
-  //width: 200px;
-  height: 100px;
-  top: 21px;
-  left: 62px;
-  z-index: 1030;
-  //-ms-flex-align: start;
-  -ms-transform: translateY(-0%);
-  transform: translateY(-0%);
-  align-items: center;
   display: none;
-  text-align: center;
-  align-content: center;
-  justify-content: end;
 }
 
 .nav-container li:hover ul {
-  display: flex;
+  //display: flex;
+  display: block;
+  width: -webkit-fill-available;
 }
 
 .nav-container ul li ul li a img {
