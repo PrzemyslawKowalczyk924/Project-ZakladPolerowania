@@ -13,8 +13,12 @@
   display: flex;
   flex-flow: row nowrap;
   justify-content: flex-start;
+  padding: 5px;
 }
 
+.main-nav {
+  flex: 1 1;
+}
 .main-nav ul {
   margin: 0;
   display: flex;
