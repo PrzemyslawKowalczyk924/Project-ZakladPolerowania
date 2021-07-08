@@ -12,26 +12,19 @@
   padding: 0;
 }
 
-.nav-container {
-  display: block;
-}
-
 .nav-container ul {
   padding: 0;
 }
 
 .nav-container li{
-  display: block;
+  display: inline-block;
   position: relative;
-  padding: 12px;
-  height: 100px;
 }
 
 .nav-svg-icon {
-  margin-top: 35px;
   filter: brightness(0) invert(1);
   cursor: pointer;
-  width: 100%;
+  width: 25%;
 }
 
 .nav-container ul ul {
@@ -39,7 +32,7 @@
 }
 
 .nav-container ul ul li {
-  display: inline-flex;
+  display: block;
   flex-wrap: nowrap;
   margin: auto;
   padding: 0;

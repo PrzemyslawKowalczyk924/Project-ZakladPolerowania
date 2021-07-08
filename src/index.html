@@ -10,19 +10,6 @@
         <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <a class="main-side-hamburger" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>  
-        <div class="overlay" id="overlay">
-            <div class="modal" id="myModal">
-              <div class="btn-close js--close-modal">x</div>
-          
-              <h4>Witaj w modalu!</h4>
-              <p>Lorem ipsum dolor sit amet...</p>
-          
-              <button class="js--close-modal">Okay</button>
-            </div>
-        </div>
         <div class="hamburger main-nav">
             <a href="#home" class="active-hamburger">Zakład Polerowania Metali<br>Anna Kowalczyk</a>
             <!-- Navigation links (hidden by default) -->
@@ -44,7 +31,7 @@
             </a>
         </div>
         <nav class="navigation-menu">
-            <div class="navigation fixed-top">  
+            <div class="nav-container">  
                 <a class="navbar-brand" href="#"><i class="logo far fa-gem"></i></a>
                 <div class="top-nav-container">
                     <div class="row">
@@ -71,17 +58,14 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="navigation fixed-bottom">
-                <a class="navbar-brand" href="#"><i class="logo far fa-gem"></i></a>
-                <div class="nav-container main-nav">
+                <div class="main-nav">
                     <ul>
                         <li>
-                            <img class="nav-svg-icon" src="images/icons/general.svg"/>
+                            <img class="nav-svg-icon" src="images/icons/home.svg"/>
                             <ul>
                                 <li>
                                     <a class="start" href="#main"/>
-                                    <img class="nav-svg-icon" src="images/icons/home.svg"/>
+                                    <img class="nav-svg-icon" src="images/icons/step-backward-solid.svg"/>
                                         start
                                     </a>
                                 </li>

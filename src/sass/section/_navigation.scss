@@ -4,36 +4,38 @@
 }
 
 .navigation-menu {
-  opacity: 0;
-  transition: 0.6s;
-  position: sticky;
+  position: fixed;
   z-index: 9;
+  background-color: hsl(210, 10%, 23%)!important;
 }
 
-.fixed-bottom, .hover-active {
-  flex: 0 0 50%;
-}
-
-.navigation {
-  background-color: #343a40!important;
+.nav-container {
   display: flex;
-  align-items: center;
-  padding: .5rem 1rem;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
 }
-  
+
+.main-nav ul {
+  margin: 0;
+  display: flex;
+}
+
+.nav-container li {
+  flex: 1 1;
+}
+
 .navbar-brand {
   display: inline-block;
-  padding-top: 1.3125rem;
-  //padding-bottom: .3125rem;
-  //margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
 }
 
+.fixed-bottom, .hover-active {
+  flex: 0 0 50%;
+}
 .show {
-  display: flex;
-  opacity: 1;
+  display: block;
 }
 
 .hide {

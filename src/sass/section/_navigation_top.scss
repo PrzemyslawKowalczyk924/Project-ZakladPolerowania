@@ -3,23 +3,7 @@
   box-sizing: border-box;
 }
 
-/* only for topbar navigation */
-.fixed-top {
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-
-/*.top-slider {
-  
-}*/
-
 .top-nav-container {
-  //border: 5px solid #1abc9c;
-  //max-width: 500px;
-  //margin: 0 auto;
   display: inline-flex;
   margin-left: auto;
 }
