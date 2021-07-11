@@ -1,33 +1,33 @@
 /* eslint-disable indent */
 
 /* function for closingModal */
-function closeModal() {
+/* function closeModal() {
     document.getElementById('overlay').classList.remove('show');
-}
+} */
 
 /* method to close modal by X */
-document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
+/* document.querySelectorAll('#overlay .js--close-modal').forEach(function(btn) {
     btn.addEventListener('click', function(e) {
       e.preventDefault();
       closeModal();
     });
-  });
+  }); */
 
 /* method to close modal by clicking on background */
-document.querySelector('#overlay').addEventListener('click', function(e) {
+/* document.querySelector('#overlay').addEventListener('click', function(e) {
 if(e.target === this) {
     closeModal();
 }
-});
+}); */
 
 /* method to close modal by hiting ESC key */
-document.addEventListener('keyup', function(e) {
+/* document.addEventListener('keyup', function(e) {
 if(e.keyCode === 27) {
     closeModal();
 }
-});
+}); */
 
-function openModal(modal) {
+/* function openModal(modal) {
 document.querySelectorAll('#overlay > *').forEach(function(modal) {
     modal.classList.remove('show');
 });
@@ -41,3 +41,4 @@ displayModal.addEventListener('click', function(e){
     openModal('#overlay');
     openModal('#myModal');
 });
+ */
