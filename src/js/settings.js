@@ -20,4 +20,5 @@ export const classNames = {
     active: 'active',
     hide: 'hide',
     },
+    splash: 'splash',
 };

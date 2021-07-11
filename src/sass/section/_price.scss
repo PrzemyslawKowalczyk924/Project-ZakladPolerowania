@@ -8,13 +8,13 @@
 }
 
 .price li {
+    min-height: 100px;
+    max-width: 540px;
     list-style-type: none;
     text-align: center;
-    //new from this line
     border-left: 4px solid #eee;
     padding-left: 0;
     margin: 0 auto;
-    max-width: 540px;
 }
 
 .price .text-left {
@@ -32,7 +32,7 @@
     height: 100%;
 }
 
-.price .steps::before {
+.steps::before {
     content: "";
     background: #02ac46;
     border-radius: 50%;
@@ -41,11 +41,11 @@
     display: block;
     border: 4px solid #fff;
     position: relative;
-    top: 35px;
+    top: 40px;
     left: -14px;
 }
 
-.price .clearfix::after {
+.clearfix::after {
     display: table;
     clear: both;
     content: "";
