@@ -1,24 +1,24 @@
-let i = 0;
+//Add this code to HTML
+{/* <section class="splasher">
+<div class="carousel">
+    <img class="photofixed" src="https://images.pexels.com/photos/2850515/pexels-photo-2850515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"/>
+    <img class="photofixed" src="https://cdn.pixabay.com/photo/2014/09/01/01/07/aluminium-432524_960_720.jpg"/>
+</div>
+</section> */}
 
-function carousel() {
-  //const images = [];
-  let time = 3000;
+const carousel = document.querySelector('.carousel');
+const slidesAmount = document.querySelectorAll('.carousel img').length;
+let currentSlide = 1;
+console.log('carousel', carousel);
+const moveSlide = function() {
   
-  //images[0] = 'https://images.pexels.com/photos/2850515/pexels-photo-2850515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940';
-  //images[1] = 'https://cdn.pixabay.com/photo/2014/09/01/01/07/aluminium-432524_960_720.jpg';
-  //const element = document.getElementById("carousel");
-  //element.style.backgroundImage = "url('images[i]')";
-  //element.setAttribute.backgroundImage = url(images[0]);
-  
-  if(i < 1) {
-    i++;
-    document.getElementById("carousel").style.backgroundImage = "url('https://images.pexels.com/photos/2850515/pexels-photo-2850515.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940')";
+  if(currentSlide === slidesAmount) {
+    carousel.style.left = '0';
+    currentSlide = 1;
   } else {
-    i = 0;
-    document.getElementById("carousel").style.backgroundImage = "url('https://cdn.pixabay.com/photo/2014/09/01/01/07/aluminium-432524_960_720.jpg')";
+    carousel.style.left = `-${100 * currentSlide}%`;
+    currentSlide++;
   }
-
-  setTimeout("carousel()", time);
 }
 
-window.onload = carousel();
+setInterval(moveSlide, 3000);

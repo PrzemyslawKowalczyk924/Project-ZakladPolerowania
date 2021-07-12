@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.splasher {
+  height: 100vh;
+  background-position: left right;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel {
+  position: absolute;
+  z-index: -1;
+  display: flex;
+  width: 100%;
+  top: 0;
+  left: 0;
+  transition: .3s;
+}
+
+.carousel img {
+  width: 100%;
+  flex: 0 0 100%;
+}
