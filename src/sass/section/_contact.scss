@@ -210,7 +210,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   line-height: 60px;
   color: #fff;
   border-radius: 50%;
-  margin: 0 auto 0 auto;
+  margin: 0 auto 50px auto;
   animation: pulse 1s cubic-bezier(0,0,0,0) 0.3s infinite;
   .fastCall {
     display: block;
@@ -242,13 +242,6 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   cursor: pointer;
   filter: saturate(250%) drop-shadow(1px 1px 0.5px gray);
   transform: rotate(-45deg);
-}
-
-
-.arrow-toPhone {
-  width: 25%;
-  opacity: 15%;
-  //transform: scaleY(-1);
 }
 
 .contact-section {
