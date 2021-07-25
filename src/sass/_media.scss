@@ -2,6 +2,14 @@
   @include grid('sm');
   
   /* Main section*/
+
+  /* Hamburger */
+
+  .address-box {
+    display: flex;
+    font-size: small;
+  }
+
   /* Header */
   .page-title {
     font-size: 30px;
@@ -62,6 +70,12 @@
 
   .abilities p {
     flex: auto !important;
+  }
+
+  /* price */
+
+  .price ol {
+    margin-left: 30px;
   }
 
   /* contact */
