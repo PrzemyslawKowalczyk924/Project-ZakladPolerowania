@@ -58,6 +58,12 @@
     flex: 0 0 100%;
   }
 
+  /* about */
+
+  .abilities p {
+    flex: auto !important;
+  }
+
   /* contact */
   .navigation-menu {
     display: none;
