@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Zakład Polerowania</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="/css/style.css">
+    </head>
+    <body>
+        <div class="hamburger main-nav">
+            <a href="#home" class="active-hamburger">Zakład Polerowania Metali<br>Anna Kowalczyk</a>
+            <div class="address-box">
+                <a>tel: 505461227 <br> email: kowalczyk@gmail.com</a>
+            </div>
+            <!-- Navigation links (hidden by default) -->
+            <div id="myLinks">
+                <a class="navbar-brand" href="#"><i class="logo far fa-gem"></i></a>
+                <a class="start" href="#main"/>start</a>
+                <a class="start" href="#about"/>o nas</a>
+                <a class="start" href="#offer"/>oferta</a>
+                <a class="start" href="#technology">technologia</a>
+                <a class="start" href="#polishing"/>polerowanie</a>
+                <a class="start" href="#photo"/>galeria</a>
+                <a class="start" href="#contact"/>kontakt</a>
+            </div>
+            <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+            <a class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+                <!-- <img class="hamburger-icon" src="images/icons/hamburger-menu.svg"/> -->
+                <!-- <img class="cancel-icon hide" src="images/icons/cancel.svg"/> -->
+            </a>
+        </div>
+        <nav class="navigation-menu">
+            <div class="nav-container">  
+                <a class="navbar-brand" href="#"><i class="logo far fa-gem"></i></a>
+                <div class="top-nav-container">
+                    <div class="row">
+                        <div class="col-of-top-nav title">
+                            <a class="top-link" href="#">Zakład Polerowania Metali</br>Anna Kowalczyk</a>
+                        </div>
+                        <div class="col-of-top-nav address">
+                            <div class="row-top">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <a class="top-link" href="#">ul. Stalowa 3</br>26-600 Radom</a>
+                            </div>
+                        </div>
+                        <div class="col-of-top-nav phone">
+                            <div class="row-top">
+                                <i class="fas fa-phone-alt"></i>
+                                <a class="top-link" href="#">505289101<br>543942932</a>
+                            </div>
+                        </div>
+                        <div class="col-of-top-nav email">
+                            <div class="row-top">
+                                <i class="far fa-envelope"></i>
+                                <a class="top-link" href="#">kyczlawok.przem@dot.pl<br>anna-kowalczuk@gmail.com</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-nav">
+                    <ul>
+                        <li>
+                            <img id="home" class="nav-svg-icon" src="images/icons/home.svg"/>
+                            <ul>
+                                <li>
+                                    <a class="start" href="#main"/>
+                                    <img class="nav-svg-icon" src="images/icons/undo-alt-solid.svg"/>
+                                        start
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img id="branch" class="nav-svg-icon" src="images/icons/grinder_on_branch.svg"/>
+                            <ul>
+                                <li>
+                                    <a class="start" href="#about">
+                                        <img class="nav-svg-icon" src="images/icons/familly.svg"/>
+                                        o nas</a>
+                                    <a class="start" href="#offer">
+                                        <img class="nav-svg-icon" src="images/icons/trust_benefit.svg"/>
+                                        oferta</a>
+                                    <a class="start" href="#technology">
+                                        <img class="nav-svg-icon" src="images/icons/innovation.svg"/>
+                                        technologia</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img id="grinder" class="nav-svg-icon" src="images/icons/grinder_on_table.svg"/>
+                            <ul>
+                                <li>
+                                    <a class="start" href="#grinding">
+                                    <img class="nav-svg-icon" src="images/icons/angle-grinder-2212232.svg"/><br>    
+                                        szlifowanie</a>
+                                    <a class="start" href="#polishing">
+                                    <img class="nav-svg-icon" src="images/icons/mirror-615789.svg"/><br>    
+                                        polerowanie</a>
+                                    <a class="start" href="#washing">
+                                        <img class="nav-svg-icon" src="images/icons/water_part.svg" /><br>
+                                        mycie</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img id="camera" class="nav-svg-icon" src="images/icons/camera-retro-solid.svg"/>
+                            <ul>
+                                <li>
+                                    <a class="start" href="#gallery">
+                                        <img class="nav-svg-icon" src="images/icons/photo.svg"/>
+                                        zdjęcia</a>
+                                    <a class="start" href="#film">
+                                        <img class="nav-svg-icon" src="images/icons/video-image.svg"/>
+                                        film</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <img id="phone" class="nav-svg-icon" src="images/icons/phone-line.svg"/>
+                            <ul>
+                                <li>
+                                    <a class="start" href="#contact">
+                                        <img class="nav-svg-icon" src="images/icons/add-contact.svg"/>
+                                        kontakt
+                                </a>
+                                </li>
+                            </ul>
+                        </li>    
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <div id="pages">
+            <div id="main">
+                <header class="splash">
+                    <div class="splash-inner">
+                        <i class="far fa-gem"></i>
+                        <h1 class="page-title">Zakład Polerowania Metali</h1>
+                        <h2 class="page-subtitle">Anna Kowalczyk</h2>
+                    </div>
+                </header>
+                
+                <section class="intro">
+                    <div class="container">
+                        <p>Wypolerujemy twój detal na efekt lustra</p>
+                    </div>
+                </section>
+                <section class="about">
+                    <div class="container">
+                        <h2 class="section-title">Kim jesteśmy i co robimy?</h2>
+                        <p>Nasza firma specjalizuje się w obróbce wykończeniowej gotowych detali.</p>
+                        <p>Gratowanie, szlifowanie, polerowanie oraz czyszczenie ultradźwiękami to nasza codzienność.</p>
+                    </div>
+                </section>
+                
+                <section class="skills">
+                    <div class="container">
+                        <h2 class="section-title">Nasza codzienność:</h2>
+                        <article class="skill-left">
+                            <div class="skill-image">
+                                <img src="https://images.pexels.com/photos/3844516/pexels-photo-3844516.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Imadło & pilnik" title="Szlifowanie mechaniczne">
+                            </div>    
+                            <div class="skill-description">
+                                <h3 class="skill-title">Szlifujemy</h3>
+                                <p class="text-lg">Ręczno-mechaniczne szlifowanie odbywa się głównie za pomocą szlifierek taśmowych (do rur), szlifierek stołowych z użyciem np. włókna, jak i za pomocą Drimella.<br/><br/>Konstrukcje na jakie najczęściej zdarzyło nam się otrzymać zlecenia to małe gabaryty: np. wykonanie wstępnego zaszlifowywania części samochodowych po obróbce CNC, które następnie mają przejść procesy chemiczne. Rzadziej na części spawane (np. stelarz pod ławę) czy odlewy.</p>
+                                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                        <article class="skill-right">
+                            <div class="skill-image">
+                                <img src="https://images.pexels.com/photos/2845220/pexels-photo-2845220.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="Pracownik podczas polerowania" title="Polerowanie mechaniczne">
+                            </div>    
+                            <div class="skill-description">
+                                <h3 class="skill-title">Polerujemy</h3>
+                                <p class="text-lg">Codziennie polerujemy setki małych detali, które z uwagi na dużą precyzję wykonania; obliczaną w nanometrach, wymagają od nas nie lada kunsztu i skupienia. Przez szereg lat opracowaliśmy różne techniki i metody dochodzenia do stawianego nam celu. To na czym nam najbardziej zależy, to jakość. Aktualnie, najczęściej polerowanym przez nas materiałem jest aluminium. Aczkolwiek mamy nie mniejsze doświadczenie w pracy ze stalą nierdzewną.<br/><br/>Cały zabieg polerowania wyonujemy ręcznie, na szlifierkach stołowych.</p>
+                                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                        <article class="skill-left">
+                            <div class="skill-image">
+                                <img src="https://images.pexels.com/photos/3819525/pexels-photo-3819525.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940" alt="Pracownik czyszczący detal" title="Pracownik czyszczący detal">
+                            </div>    
+                            <div class="skill-description">
+                                <h3 class="skill-title">Czyścimy</h3>
+                                <p class="text-lg">Pasta polerska pod wpływem temperatury rozpuszcza się, dzięki czemu gładź ulega lepszej obróbce. Kiedy zastygnie, nie sposób jej wydobyć w łatwy sposób z trudno dostępnych szczelin. <br><br>Dlatego wypolerowane elementy, aby nie straciły na jakości; kąpiemy w myjkach ultradźwiękowyh, które najlepiej spisują się w docieraniu do trudno dostępnych miejsc.</p>
+                                <p class="text-sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+                
+                <section class="portfolio">
+                    <h2 class="section-title">Portfolio</h2>
+                    <div class="wrapper">
+                        <div class="box">
+                            <div class="gallery-picture">
+                                <img src="https://images.pexels.com/photos/4489772/pexels-photo-4489772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </div>
+                            <div class="description">
+                                <h3 class="title">CURABITUR ID</h3>
+                                <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                            </div>    
+                        </div>
+                        <div class="box">
+                            <div class="gallery-picture">
+                                <img src="https://images.pexels.com/photos/3822927/pexels-photo-3822927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </div>
+                            <div class="description">
+                                <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                            </div>    
+                        </div>
+                        <div class="box">
+                            <div class="gallery-picture">
+                                <img src="https://images.pexels.com/photos/4482036/pexels-photo-4482036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </div>
+                            <div class="description">
+                                <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                            </div>    
+                        </div>
+                        <div class="box">
+                            <div class="gallery-picture">
+                                <img src="https://images.pexels.com/photos/3846086/pexels-photo-3846086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </div>
+                            <div class="description">
+                                <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                            </div>    
+                        </div>
+                        <div class="box">
+                            <div class="gallery-picture">
+                                <img src="https://images.pexels.com/photos/4482034/pexels-photo-4482034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                            </div>
+                            <div class="description">
+                                <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                            </div>    
+                        </div>
+                        <div class="box">
+                            <div class="gallery-picture">
+                                <img src="https://images.pexels.com/photos/3811859/pexels-photo-3811859.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                            </div>
+                            <div class="description">
+                                <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                            </div>    
+                        </div>
+                    </div>    
+                </section>
+
+                <section class="about">
+                    <div class="container">
+                        <h2 class="section-title">Nasze atuty:</h2>
+                        <div class="abilities">
+                            <p class="abi-description"><i class="fas fa-child"></i><span>Satysfakcja klienta naszym priorytetem</span></p>
+                            <p class="abi-description"><i class="fas fa-stopwatch"></i><span>Dyspozycyjność i elastyczność</span></p>
+                            <p class="abi-description"><i class="fas fa-lock-open"></i><span>Jesteśmy otwarci na zmiany</span></p>
+                            <p class="abi-description"><i class="fas fa-check-double"></i><span>Prowadzimy strategię Win to Win</span></p>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="price">
+                    <div class="container">
+                        <i class="fas fa-money-bill-wave"></i>
+                        <h2 class="section-title">Wycena detali:</h2>
+                        <ol>
+                            <li class="steps text-left clearfix"><p>Każde zamówienie rozpatrujemy z klientem idywindualnie.</p></li>
+                            <li class="steps text-left clearfix"><p>Na drodze wstępnej rozmowy, ustalamy kryteria według, których ma być wykonany detal.</p></li>
+                            <li class="steps text-left clearfix"><p>Wykonujemy testy próbne, które oferujemy ze swej strony bezpłatnie.</p></li>
+                            <li class="steps text-left clearfix"><p>Jeżeli detal spełnia wymogi klienta, prognozujemy koszta które trzeba będzie ponieść</p></li>
+                            <li class="steps text-left clearfix"><p>Ustalamy czas w jakim ma być realizowane dzieło.</p></li>
+                            <li class="steps text-left clearfix"><p>Średnio godzina robocza naszego warsztatu wynosi 60 zł/h.</p></li>
+                        </ol>
+                    </div>
+                </section>
+
+                <section class="contact-section">
+                    <div class="container">
+                        <div class="circleAround">
+                            <img class="fastCall" src="images/icons/phone-volume-solid.svg"/>
+                        </div>
+                        <p>Masz pytania? Zadzwoń. Chętnie odpowiemy.<br><br>Pracujemy: poniedziałek-piątek 8:00 - 18:00</p>
+                    </div>
+                </section>
+            </div>
+
+            <div id="about">
+                <section class="about">
+                    <div class="container">
+                        <h2 class="section-title">O nas</h2>
+                        <p class="about-description">Jesteśmy rodzinną mikrofirmą. Na rynku istniejemy od 2015 roku, choć nasza działalność rozpoczęła się dużo wcześniej.</p>
+                        <p class="about-description">Początkowo zajmowaliśmy się obróbką skrawaniem na maszynach tokarskich i frezerskich. Kiedy zlecenia na szlifowanie i polerkę rosły, postanowiliśmy zająć się wyłącznie tą dziedziną metalurgii.</p>
+                        <p class="about-description">Obecnie wykonujem głównie zlecenia stałe na polerowanie aluminium. Nasi kontrahenci cenią nas za naszą dyspozycyjność, elastyczność i pewność, że to co nam powierzą, zostanie wykonane w czasie i o określonej jakości.</p>
+                        <p class="about-description">Nie zamykamy się sztywno w określonej dziedzinie szerokopojętej "obróbki", toteż chętnie podejmujemy się nowych wyzwań jakie stawia przed nami klient. Ponieważ cały czas chcemy się rozwijać, gotowi jesteśmy do inwestycji w innowacyjne maszyny specjalistyczne.</p>
+                        <p class="about-description">Główna siedziba firmy znajduje się w Radomiu na ul. Stalowej 3 w byłych Zakładach Łączników. Drugi oddział firmy, znajduje się na Gąsawach Plebańskich 58 k. Jastrzębia, skąd biorą się też korzenie naszego zakładu.</p>
+                    </div>
+                </section>
+            </div>
+            <div id="offer">
+                <section class="about offer">
+                    <div class="container">
+                        <h2 class="section-title">Nasza oferta</h2>
+                        <p class="about-description">Posiadamy wieloletnie doświadczenie w obróbce polerowania i szlifowania metali. Głównym materiałem, który polerujemy na codzień jest aluminium, ale posiadamy również doświadczenie w polerowaniu stali nierdzewnej, jak i stopów w formie: płytek, prifili, odlewów i odkuwek. Zasadniczo obrabiamy komponenty wytwarzane na obrabiarkach sterowanych numerycznie lub z tokarek i frezarek konwencjonalnych. Specjalizujemy się w średnich i długich seriach. Dziennie z naszego zakładu wychodzi około od 400 do 500 małych wypolerowanych elementów.</p>
+                        <p class="about-description">Nad jakością detali czuwamy pod pilnym nadzorem naszych klientów, którzy chwalą sobie naszą precyzję oraz krótki czas oczekiwania na dostawę gotowego detalu.</p>  
+                        <p class="about-description">Za priorytet stawiamy sobie satysfakcję naszego klienta, dlatego chętnie współpracujemy z naszymi kontrahentami i przyjmujemy z otwartością wszelkie uwagi jakie pojawiają się w trakcie produkcji.</p>  
+                        <p class="about-description">Przy większych zamówieniach, uruchamiamy dwie zmiany.</p>  
+                        <p class="about-description">Zachęcamy do kontaktu z nami pod numerem widniejącym w sekcji kontakt lub drogą mailową. Zawsze odpowiadamy.</p>  
+                    </div>
+                </section>
+            </div>
+            <div id="technology">
+                <section class="about offer">
+                    <div class="container">
+                        <h2 class="section-title">Nasze technologie</h2>
+                        <p class="about-description">Obróbka ręczno-mechaniczna</p>  
+                        <p class="about-description">Ośmielamy się nazywać naszą pracę sztuką. Ponieważ wszystko co robimy, odbywa się ręcznie.</p>  
+                        <p class="about-description">Możliwości produkcyjne naszego zakładu polerowania uzależnione są od wielkości zamówień. Gdy zamówienia rosną, zwiększamy nasze moce przerobowe przez zatrudnianie nowych pracowników.</p>  
+                        <p class="about-description"></p>  
+                    </div>
+                </section>
+            </div>
+            <div id="grinding">
+                <section class="about offer">
+                    <div class="container">
+                        <h2 class="section-title">Szlifowanie</h2>
+                        <p class="about-description"></p>
+                        <ul> Usługi szlifowania
+                            <li>Szlifierki do rur</li>
+                            <li>Szlifierki kontowe</li>
+                            <li>Szlifierki stołowe</li>
+                        </ul>  
+                    </div>
+                </section>
+            </div>
+            <div id="polishing">
+                <section class="about offer">
+                    <div class="container">
+                        <h2 class="section-title">Polerowanie</h2>
+                        <p class="about-description">Powierzchnia matowa</p>  
+                        <p class="about-description">Powierzchnia na połysk</p>  
+                        <p class="about-description">Powierzchnia lustrzana</p>  
+                    </div>
+                </section>
+            </div>
+            <div id="washing">
+                <section class="about offer">
+                    <div class="container">
+                        <h2 class="section-title">Mycie</h2>
+                        <p class="about-description">Myjemy trudno dostępne miejsca za pomocą myjek ultradźwiękowych.</p>  
+                    </div>
+                </section>
+            </div>
+            <div id="gallery">
+                <div class="container">
+                    <section class="portfolio">
+                        <h2 class="section-title">Portfolio</h2>
+                        <div class="wrapper">
+                            <div class="box">
+                                <div class="gallery-picture">
+                                    <img src="https://images.pexels.com/photos/4489772/pexels-photo-4489772.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                                </div>
+                                <div class="description">
+                                    <h3 class="title">CURABITUR ID</h3>
+                                    <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                                </div>    
+                            </div>
+                            <div class="box">
+                                <div class="gallery-picture">
+                                    <img src="https://images.pexels.com/photos/3822927/pexels-photo-3822927.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                                </div>
+                                <div class="description">
+                                    <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                    <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                                </div>    
+                            </div>
+                            <div class="box">
+                                <div class="gallery-picture">
+                                    <img src="https://images.pexels.com/photos/4482036/pexels-photo-4482036.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                                </div>
+                                <div class="description">
+                                    <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                    <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                                </div>    
+                            </div>
+                            <div class="box">
+                                <div class="gallery-picture">
+                                    <img src="https://images.pexels.com/photos/3846086/pexels-photo-3846086.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                                </div>
+                                <div class="description">
+                                    <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                    <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                                </div>    
+                            </div>
+                            <div class="box">
+                                <div class="gallery-picture">
+                                    <img src="https://images.pexels.com/photos/4482034/pexels-photo-4482034.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940">
+                                </div>
+                                <div class="description">
+                                    <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                    <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                                </div>    
+                            </div>
+                            <div class="box">
+                                <div class="gallery-picture">
+                                    <img src="https://images.pexels.com/photos/3811859/pexels-photo-3811859.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500">
+                                </div>
+                                <div class="description">
+                                    <h3 class="gallery-picture1-title">CURABITUR ID</h3>
+                                    <a href="#ourwork" class="btn btn-one">SEE DETAILS</a>
+                                </div>    
+                            </div>
+                        </div>    
+                    </section>
+                </div>
+            </div>
+            <div id="film">
+                <section class="about offer">
+                    <div class="container">
+                        <h2 class="section-title">Filmy</h2>
+                        <p class="about-description">Tu będą filmy</p>  
+                    </div>
+                </section>
+            </div>
+            <div id="contact">
+                <section class="contact">
+                    <div class="container-fluid contact-wrapper">
+                        <div class="row">
+                            <section class="col-12 google-maps">
+                                <div class="mapouter" style="width: 100%;">
+                                    <div class="gmap_canvas" style="width: 100%;">
+                                        <iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=stalowa%203%20radom&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                        <a href="https://123movies-ii.com">123movies</a>
+                                    </div>
+                                    <style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}.gmap_canvas {overflow:hidden;background:none!important;height:500px;width:1080px;}.iframe {width:100%;height:100%;}</style>
+                                </div>
+                            </section>
+                        </div>    
+                        <div class="row">
+                            <section class="col-6 companys-data-section">
+                                <div class="field row">
+                                    <div class="col-4 left">
+                                        <i class="logo far fa-gem"></i>
+                                    </div>
+                                    <div class="col-8 right">
+                                        <h3 class="companys-data-name">Zakład Polerowania Metali<br>Anna Kowalczyk</h3>
+                                    </div>
+                                    <div class="col-4 left icon-in">
+                                        <i class="fas fa-map-marker-alt"></i>
+                                    </div>
+                                    <div class="col-8 right">
+                                        <p>ul.Stalowa 3, 26-600 Radom<br>Polska</p>
+                                    </div>
+                                    
+                                    <div class="col-4 left icon-in">
+                                        <i class="fas fa-phone-alt"></i>    
+                                    </div>
+                                    <div class="col-8 right">
+                                        <p>tel. 505443209<br>505432875</p>
+                                    </div>
+                                    <div class="col-4 left icon-in">
+                                        <i class="far fa-envelope"></i>
+                                    </div>
+                                    <div class="col-8 right">
+                                        <a href="#">kyczlawok.przem@dot.pl<br>anna-kowalczuk@gmail.com</a>
+                                    </div>
+                                </div>
+                            </section>
+                            <section class="col-6 form-section">
+                                <form action="" method="POST">
+                                    <h2 class="section-title">Napisz do nas</h2>
+                                    <div class="field">
+                                        <input type="text" name="user-name" placeholder="Imię..." minlength="3">
+                                    </div>
+                                    <div class="field">
+                                        <input type="email" name="user-name" placeholder="E-mail...">
+                                    </div>
+                                    <div class="field">
+                                        <input type="text" name="user-name" placeholder="Temat..." minlength="3">
+                                    </div>
+                                    <div class="field">
+                                        <textarea name="message" placeholder="Wiadomość" minlength="3"></textarea>
+                                    </div>
+                                    <button type="submit" class="btn btn-two">Wyślij</button>
+                                    </form>
+                            </section>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <div class="sticky-phone">
+            <div class="circleAroundSticky">
+                <img class="fastCallSticky" src="images/icons/phone-volume-solid.svg"/>
+            </div>
+        </div>
+        <footer class="page-footer">
+            <div class="container">
+                <p>
+                    ©Przemysław Kowalczyk. All rights reserved.
+                </p>
+            </div>
+        </footer>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+        <script src="js/hamburger.js"></script>
+        <script src="js/canvas.js"></script>
+        <script src="/js/script.js"></script>
+        <script src="js/carousel.js"></script>
+        <script src="js/app.js" type="module"></script>
+    </body>
+</html>
