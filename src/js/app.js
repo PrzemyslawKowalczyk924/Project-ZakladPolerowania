@@ -53,7 +53,7 @@ export const app = {
         }
                 
         /* code added with menthor */
-        const navBar = document.querySelector('.navigation-menu');
+        const navBar = document.querySelector('.navigation');
         const galleryBar = document.getElementById('gallery');
             if (window.location.hash == '' || window.location.hash == '#/main'){
                 navBar.classList.toggle('show', window.scrollY > 600);  

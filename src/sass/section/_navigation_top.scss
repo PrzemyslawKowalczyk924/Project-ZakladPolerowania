@@ -3,8 +3,7 @@
   box-sizing: border-box;
 }
 
-.top-nav-container {
-  display: inline-flex;
+.navigation__contact_wrapper {
   margin-left: auto;
 }
 
@@ -30,7 +29,7 @@
 
 /* fixed-top description */
 
-.navigation-menu {
+.navigation {
   .title {
     border-right: 1px solid white;
     color: white;

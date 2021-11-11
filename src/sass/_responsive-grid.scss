@@ -1,7 +1,9 @@
 * {
   box-sizing: border-box;
 }
-  
+
+@include grid('');  
+
 .container-responsive {
   width: 100%;
   max-width: 1170px;
@@ -19,4 +21,9 @@
 .row {
   display: flex;
   flex-wrap: wrap;
+}
+
+// media querry
+@media(min-width: 1200px) {
+  @include grid('xl');
 }

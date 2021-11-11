@@ -3,18 +3,27 @@
   box-sizing: border-box;
 }
 
-.navigation-menu {
+.navigation {
   position: fixed;
   z-index: 9;
   background-color: hsl(210, 10%, 23%)!important;
+  width: 100%;
+  top: 0;
+  left: 0;
 }
 
-.nav-container {
+.navigation__container {
   display: flex;
-  flex-flow: row nowrap;
   justify-content: flex-start;
   padding: 5px 5px 0 5px;
   //margin: 5px;
+}
+
+.navigation__brand {
+  display: inline-block;
+  font-size: 1.25rem;
+  line-height: inherit;
+  white-space: nowrap;
 }
 
 .main-nav {
@@ -25,16 +34,10 @@
   display: flex;
 }
 
-.nav-container li {
+.navigation__container li {
   flex: 1 1;
 }
 
-.navbar-brand {
-  display: inline-block;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
 
 .fixed-bottom, .hover-active {
   flex: 0 0 50%;
