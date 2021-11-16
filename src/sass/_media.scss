@@ -1,5 +1,4 @@
 @media(max-width: 767px) {
-  @include grid('-sm');
   
   /* Main section*/
 
@@ -116,13 +115,13 @@
 }
 
 @media(min-width: 425px) {
+  //tutaj nie było nic sm/lg itp
   .portfolio .box {
     flex: 0 0 50%;
   }
 }
 
 @media(min-width: 768px) {
-  @include grid('-md');
   /* main section */
   /* skills */
   .hamburger {
@@ -143,7 +142,6 @@
 }
     
 @media(min-width: 992px) {
-  @include grid('-lg');
 
   .hamburger {
     display: none;
