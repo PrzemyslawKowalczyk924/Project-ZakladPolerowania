@@ -24,22 +24,10 @@
 }
 
 // media querry
-@media(min-width: 1200px) {
-  @include grid('xl');
-}
-
-@media(min-width: 992px) {
-  @include grid('lg');
-}
-
-@media(min-width: 768px) {
+@media(max-width: 1200px) {
   @include grid('md');
 }
 
-@media(min-width: 425px) {
-
-}
-
-@media(max-width: 767px) {
+@media(max-width: 768px) {
   @include grid('sm');
 }
