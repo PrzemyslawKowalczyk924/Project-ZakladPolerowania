@@ -856,12 +856,17 @@ template {
   margin-left: auto;
 }
 
-.row-top {
-  display: flex;
-  flex-direction: row;
+.navigation__contact_wrapper__col {
+  margin: 5px 0 5px 0;
+  padding: 0 5px 0 5px;
+  text-decoration: none;
+  font-size: small;
+  border-right: 1px solid white;
+  color: white;
+  line-height: normal;
 }
 
-.row-top i {
+.navigation__contact_wrapper .row i {
   align-content: center;
   text-align: center;
   margin: auto 5px;
@@ -869,53 +874,16 @@ template {
   font-size: x-large;
 }
 
-.col-of-top-nav {
-  margin: 5px 0 5px 0;
-  padding: 0 5px 0 5px;
-  text-decoration: none;
-  font-size: small;
-}
-
-/* fixed-top description */
-.navigation .title {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
-
-.navigation .address {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
-
-.navigation .address i a {
-  margin-right: 5px;
-  color: white;
-}
-
-.navigation .phone {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
-
-.navigation .phone i a {
-  margin-right: 5px;
-  color: white;
-}
-
-.navigation .email {
-  border-right: 1px solid white;
-  color: white;
-  line-height: normal;
-}
-
-.navigation .top-link {
+.navigation__contact_wrapper__col a {
   color: white;
   line-height: normal;
   margin-right: 5px;
   text-decoration: none;
+}
+
+.navigation__contact_wrapper__col i {
+  margin-right: 5px;
+  color: white;
 }
 
 /* bottom-bar */
@@ -948,25 +916,6 @@ template {
   width: 30%;
 }
 
-/* #branch {
-  width: 35%;
-  padding: 0;
-  margin: 0;
-  height: 20px;
-}
-
-#home {
-  padding: 0;
-} */
-/* #grinder {
-  width: 35px;
-} */
-/* #photo {
-  width: 60px;
-} */
-/* #phone {
-  width: 25px;
-} */
 .navigation__container ul ul {
   background-color: #3d3d3d;
 }
@@ -1596,7 +1545,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 /* Media */
-@media (max-width: 767px) {
+@media (max-width: 768px) {
   /* Main section*/
   /* Hamburger */
   .address-box {
@@ -1683,28 +1632,22 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
-@media (min-width: 425px) {
+@media (max-width: 768px) {
   .portfolio .box {
     flex: 0 0 50%;
   }
 }
 
 @media (min-width: 768px) {
-  /* main section */
-  /* skills */
   .hamburger {
     display: none;
   }
   .skills .text-sm {
     display: none;
   }
+  /* main section */
+  /* skills */
   /*portfolio */
-  .portfolio .box {
-    flex: 0 0 33.33333333333333%;
-  }
-  .sub-gallery .box {
-    flex: 0 0 50%;
-  }
 }
 
 @media (min-width: 992px) {

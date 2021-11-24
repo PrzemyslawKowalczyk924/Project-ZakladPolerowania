@@ -1,4 +1,6 @@
-@media(max-width: 767px) {
+@media(max-width: 768px) {
+  
+  // MOBILE !!!  
   
   /* Main section*/
 
@@ -114,16 +116,14 @@
   }
 }
 
-@media(min-width: 425px) {
-  //tutaj nie było nic sm/lg itp
+@media(max-width: 768px) {
+  
   .portfolio .box {
     flex: 0 0 50%;
   }
 }
 
 @media(min-width: 768px) {
-  /* main section */
-  /* skills */
   .hamburger {
     display: none;
   }
@@ -131,14 +131,9 @@
   .skills .text-sm {
     display: none;
   }
+  /* main section */
+  /* skills */
   /*portfolio */
-  .portfolio .box {
-    flex: 0 0 33.33333333333333%;
-  }
-
-  .sub-gallery .box {
-    flex: 0 0 50%;
-  }
 }
     
 @media(min-width: 992px) {
