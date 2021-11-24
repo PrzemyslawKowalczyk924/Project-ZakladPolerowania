@@ -815,13 +815,6 @@ template {
   padding: 5px 5px 0 5px;
 }
 
-.navigation__brand {
-  display: inline-block;
-  font-size: 1.25rem;
-  line-height: inherit;
-  white-space: nowrap;
-}
-
 .main-nav {
   flex: 1 1;
 }
@@ -872,6 +865,12 @@ template {
   margin: auto 5px;
   margin-right: 10px;
   font-size: x-large;
+}
+
+.navigation__contact_wrapper .row .navigation__brand {
+  display: inline-block;
+  font-size: 20px !important;
+  white-space: nowrap;
 }
 
 .navigation__contact_wrapper__col a {

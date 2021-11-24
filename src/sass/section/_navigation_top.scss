@@ -25,6 +25,12 @@
   font-size: x-large;
 }
 
+.navigation__contact_wrapper .row .navigation__brand {
+  display: inline-block;
+  font-size: 20px !important;
+  white-space: nowrap;
+}
+
 .navigation__contact_wrapper__col a {
   color: white;
   line-height: normal;
