@@ -816,7 +816,7 @@ template {
 }
 
 .main-nav {
-  flex: 1 1;
+  flex: 1;
 }
 
 .main-nav ul {
@@ -847,6 +847,7 @@ template {
 
 .navigation__contact_wrapper {
   margin-left: auto;
+  flex: 1;
 }
 
 .navigation__contact_wrapper__col {
