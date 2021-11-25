@@ -16,6 +16,11 @@
   border-right: 1px solid white;
   color: white;
   line-height: normal;
+  flex: auto;
+}
+
+.navigation__contact_wrapper__col i a {
+  flex: auto;
 }
 
 .navigation__contact_wrapper .row i {
