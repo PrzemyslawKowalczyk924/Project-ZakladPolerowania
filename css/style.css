@@ -446,7 +446,7 @@ template {
 
 .row {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 @media (max-width: 1200px) {
@@ -858,6 +858,11 @@ template {
   border-right: 1px solid white;
   color: white;
   line-height: normal;
+  flex: auto;
+}
+
+.navigation__contact_wrapper__col i a {
+  flex: auto;
 }
 
 .navigation__contact_wrapper .row i {
