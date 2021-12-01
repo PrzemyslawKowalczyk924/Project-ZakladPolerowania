@@ -815,11 +815,11 @@ template {
   padding: 5px 5px 0 5px;
 }
 
-.main-nav {
+.navigation__dropdown {
   flex: 1;
 }
 
-.main-nav ul {
+.navigation__dropdown ul {
   margin: 0;
   display: flex;
 }

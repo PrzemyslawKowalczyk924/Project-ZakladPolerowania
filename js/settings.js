@@ -5,7 +5,7 @@ export const select = {
         pages: '#pages',
     },
     nav: {
-        links: '.main-nav a:not(.icon)',
+        links: '.navigation__dropdown a:not(.icon)',
       },
     navigation: {
         top: '.fixed-top',
