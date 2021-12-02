@@ -21,6 +21,7 @@
 .row {
   display: flex;
   flex-wrap: nowrap; //changed in 26.11.2021 from wrap to nowrap
+  align-items: center;
 }
 
 // media querry
