@@ -447,6 +447,7 @@ template {
 .row {
   display: flex;
   flex-wrap: nowrap;
+  align-items: center;
 }
 
 @media (max-width: 1200px) {
@@ -847,7 +848,7 @@ template {
 
 .navigation__contact_wrapper {
   margin-left: auto;
-  flex: 1;
+  flex: inherit;
 }
 
 .navigation__contact_wrapper__col {
@@ -884,6 +885,8 @@ template {
   line-height: normal;
   margin-right: 5px;
   text-decoration: none;
+  margin-top: auto;
+  margin-bottom: auto;
 }
 
 .navigation__contact_wrapper__col i {
