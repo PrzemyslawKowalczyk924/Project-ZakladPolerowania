@@ -812,7 +812,7 @@ template {
 
 .navigation__container {
   display: flex;
-  justify-content: flex-start;
+  align-items: center;
 }
 
 .navigation__dropdown {
@@ -847,7 +847,6 @@ template {
 
 .navigation__contact_wrapper {
   margin-left: auto;
-  flex: inherit;
 }
 
 .navigation__contact_wrapper__col {
@@ -858,13 +857,10 @@ template {
   border-right: 1px solid white;
   color: white;
   line-height: normal;
-  flex: auto;
 }
 
-.navigation__contact_wrapper__col i a {
-  flex: auto;
-}
-
+/* .navigation__contact_wrapper__col i a {
+} */
 .navigation__contact_wrapper .row i {
   align-content: center;
   text-align: center;
@@ -909,12 +905,14 @@ template {
 
 .navigation__container ul {
   padding: 0;
-  align-items: flex-end;
+  min-height: 50px;
 }
 
 .navigation__container li {
-  display: inline-block;
+  display: flex;
   position: relative;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-svg-icon {
