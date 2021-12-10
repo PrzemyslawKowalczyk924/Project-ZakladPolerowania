@@ -813,19 +813,15 @@ template {
 .navigation__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.navigation__dropdown {
-  flex: 1;
-}
-
+/* .navigation__dropdown {
+  width: 50%;
+} */
 .navigation__dropdown ul {
   margin: 0;
   display: flex;
-}
-
-.navigation__container li {
-  flex: 1 1;
 }
 
 .fixed-bottom, .hover-active {
@@ -845,10 +841,9 @@ template {
   box-sizing: border-box;
 }
 
-.navigation__contact_wrapper {
-  margin-left: auto;
-}
-
+/* .navigation__contact_wrapper {
+  width: 50%;
+} */
 .navigation__contact_wrapper__col {
   margin: 5px 0 5px 0;
   padding: 0 5px 0 5px;
@@ -913,12 +908,18 @@ template {
   position: relative;
   align-items: center;
   justify-content: center;
+  padding: 0 40px;
+  cursor: pointer;
+}
+
+.navigation__container li:hover #home, .navigation__container li:hover #branch, .navigation__container li:hover #grinder, .navigation__container li:hover #camera, .navigation__container li:hover #phone {
+  filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
 }
 
 .nav-svg-icon {
   filter: brightness(0) invert(1);
   cursor: pointer;
-  width: 30%;
+  width: 40px;
 }
 
 .navigation__container ul ul {
@@ -971,6 +972,7 @@ template {
 .navigation__container li ul {
   position: absolute;
   display: none;
+  top: 50px;
 }
 
 .navigation__container li:hover ul {

@@ -15,21 +15,17 @@
 .navigation__container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.navigation__dropdown {
-  flex: 1;
-}
+/* .navigation__dropdown {
+  width: 50%;
+} */
 
 .navigation__dropdown ul {
   margin: 0;
   display: flex;
 }
-
-.navigation__container li {
-  flex: 1 1;
-}
-
 
 .fixed-bottom, .hover-active {
   flex: 0 0 50%;
