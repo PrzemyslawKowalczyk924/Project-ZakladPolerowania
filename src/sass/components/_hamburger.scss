@@ -35,7 +35,6 @@
 /* Style the navigation menu */
 .hamburger {
   overflow: hidden;
-  background-color: #333;
   position: relative;
   z-index: 99999;
   position: fixed;
@@ -45,6 +44,7 @@
 /* Hide the links inside the navigation menu (except for logo/home) */
 .hamburger #myLinks {
   display: none;
+  //opacity: 50%;
 }
 
 /* Style navigation menu links */
@@ -56,6 +56,7 @@
   display: block;
   margin: 0;
   line-height: normal;
+  background-color: #333;
 }
 
 /* Style the hamburger menu */
@@ -79,13 +80,26 @@
 .active-hamburger {
   color: white;
   font-size: medium;
+  //opacity: 50%;
+  //background-color: #333;
 }
 
-.own-design {
+/* .own-design {
   font-size: medium;
 }
 
 .add-hamburger {
   display: block;
   //position: fixed;
+} */
+
+/* .hamburger__links {
+  opacity: 50%;
+} */
+.start {
+  opacity: 85%;
+}
+
+.navbar-brand {
+  opacity: 95%;
 }
