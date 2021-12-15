@@ -60,10 +60,12 @@ export const app = {
                 } else {
                 navBar.classList.add('show');
                 }
-            //window.location.hash = id;
-            /* end of code added with menthor */
-            /* change url hash */
-            //debugger;
+            //na tym na dziś the end
+            if (window.matchMedia('min-width: 425px')) {
+                navBar.classList.add('hide');
+            } else {
+                navBar.classList.remove('hide');
+            }
 
             if(pageId == 'contact'){
                 navBar.classList.add('nav-contact');
