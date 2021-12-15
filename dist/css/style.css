@@ -628,37 +628,6 @@ template {
   max-width: 100%;
 }
 
-/* mój styl css na hamburgera */
-/*.hamburger {
-  position: fixed;
-  z-index: 300;
-  //left: 95%;
-}*/
-/*.hamburger-icon {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin: 22px 15px 15px 15px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  &:hover {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-  }
-}*/
-/*.cancel-icon {
-  display: none;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin: 22px 15px 15px 15px;
-
-  &:hover {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-  }
-}*/
 /* Style the navigation menu */
 .hamburger {
   overflow: hidden;
@@ -708,17 +677,6 @@ template {
   font-size: medium;
 }
 
-/* .own-design {
-  font-size: medium;
-}
-
-.add-hamburger {
-  display: block;
-  //position: fixed;
-} */
-/* .hamburger__links {
-  opacity: 50%;
-} */
 .start {
   opacity: 85%;
 }
@@ -827,9 +785,6 @@ template {
   justify-content: space-between;
 }
 
-/* .navigation__dropdown {
-  width: 50%;
-} */
 .navigation__dropdown ul {
   margin: 0;
   display: flex;
@@ -1647,9 +1602,9 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 @media (max-width: 425px) {
-  .show {
+  /* .show {
     display: none;
-  }
+  } */
 }
 
 @media (max-width: 768px) {

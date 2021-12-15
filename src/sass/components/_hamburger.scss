@@ -1,37 +1,3 @@
-/* mój styl css na hamburgera */
-/*.hamburger {
-  position: fixed;
-  z-index: 300;
-  //left: 95%;
-}*/
-
-/*.hamburger-icon {
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin: 22px 15px 15px 15px;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-
-  &:hover {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-  }
-}*/
-
-/*.cancel-icon {
-  display: none;
-  cursor: pointer;
-  width: 30px;
-  height: 30px;
-  margin: 22px 15px 15px 15px;
-
-  &:hover {
-    filter: invert(48%) sepia(79%) saturate(2476%) hue-rotate(86deg) brightness(118%) contrast(119%);
-  }
-}*/
-
 /* Style the navigation menu */
 .hamburger {
   overflow: hidden;
@@ -44,7 +10,6 @@
 /* Hide the links inside the navigation menu (except for logo/home) */
 .hamburger #myLinks {
   display: none;
-  //opacity: 50%;
 }
 
 /* Style navigation menu links */
@@ -80,22 +45,8 @@
 .active-hamburger {
   color: white;
   font-size: medium;
-  //opacity: 50%;
-  //background-color: #333;
 }
 
-/* .own-design {
-  font-size: medium;
-}
-
-.add-hamburger {
-  display: block;
-  //position: fixed;
-} */
-
-/* .hamburger__links {
-  opacity: 50%;
-} */
 .start {
   opacity: 85%;
 }
