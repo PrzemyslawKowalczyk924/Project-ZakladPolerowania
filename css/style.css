@@ -1602,9 +1602,9 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 @media (max-width: 425px) {
-  /* .show {
+  .navigation {
     display: none;
-  } */
+  }
 }
 
 @media (max-width: 768px) {
@@ -1640,6 +1640,15 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
   .skills .text-sm {
     display: none;
+  }
+}
+
+@media (min-width: 2559px) {
+  .navigation__contact_wrapper {
+    flex-grow: 1;
+  }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
+    margin-right: auto;
   }
 }
 
