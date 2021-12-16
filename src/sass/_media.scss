@@ -111,10 +111,13 @@
   }
 }
 
+//min-width od mobile first
+//max-width od desktop first
+
 @media(max-width: 425px) {
-  /* .show {
+  .navigation {
     display: none;
-  } */
+  }
 }
 
 @media(max-width: 768px) {
@@ -158,4 +161,14 @@
     display: none;
   }
   
+}
+
+@media(min-width: 2559px) {
+  .navigation__contact_wrapper {
+    flex-grow: 1;
+  }
+
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
+    margin-right: auto;
+  }
 }

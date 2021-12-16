@@ -60,12 +60,6 @@ export const app = {
                 } else {
                 navBar.classList.add('show');
                 }
-            //na tym na dziś the end
-            if (window.matchMedia('min-width: 425px')) {
-                navBar.classList.add('hide');
-            } else {
-                navBar.classList.remove('hide');
-            }
 
             if(pageId == 'contact'){
                 navBar.classList.add('nav-contact');
