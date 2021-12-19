@@ -1643,6 +1643,12 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
+@media (min-width: 1024px) {
+  .navigation__container li {
+    padding: 0 35px;
+  }
+}
+
 @media (min-width: 2559px) {
   .navigation__contact_wrapper {
     flex-grow: 1;
