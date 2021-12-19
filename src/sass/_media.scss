@@ -163,6 +163,18 @@
   
 }
 
+@media(min-width: 1024px) { 
+  .navigation__contact_wrapper .row:first-child {
+    //display: none;
+  }
+  .navigation__contact_wrapper__col a:last-child {
+    //display: none;
+  }
+  .navigation__container li {
+    padding: 0 35px;
+  }
+}
+
 @media(min-width: 2559px) {
   .navigation__contact_wrapper {
     flex-grow: 1;

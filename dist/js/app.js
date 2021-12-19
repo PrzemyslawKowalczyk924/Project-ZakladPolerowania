@@ -60,6 +60,10 @@ export const app = {
                 } else {
                 navBar.classList.add('show');
                 }
+            //window.location.hash = id;
+            /* end of code added with menthor */
+            /* change url hash */
+            //debugger;
 
             if(pageId == 'contact'){
                 navBar.classList.add('nav-contact');
