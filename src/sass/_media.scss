@@ -164,12 +164,26 @@
 }
 
 @media(min-width: 1024px) { 
-  .navigation__contact_wrapper .row:first-child {
-    //display: none;
+
+  .navigation__contact_wrapper .row {
+    .navigation__contact_wrapper__col:first-child {
+      a:last-child {
+        display: none;
+      }
+    }
+    .navigation__contact_wrapper__col:nth-child(2) i {
+      display: none;
+    }
   }
-  .navigation__contact_wrapper__col a:last-child {
+
+  /* .navigation__contact_wrapper .row:first-child {
     //display: none;
-  }
+    .navigation__contact_wrapper__col {
+      .row a:last-child {
+        display: none;
+      }
+    }
+  } */
   .navigation__container li {
     padding: 0 35px;
   }
