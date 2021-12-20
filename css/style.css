@@ -1620,6 +1620,9 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .skills .text-sm {
     display: none;
   }
+  .nav-svg-icon {
+    width: 34px;
+  }
   /* main section */
   /* skills */
   /*portfolio */
@@ -1641,6 +1644,9 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .skills .text-sm {
     display: none;
   }
+  .nav-svg-icon {
+    width: 40px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -1650,14 +1656,6 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
     display: none;
   }
-  /* .navigation__contact_wrapper .row:first-child {
-    //display: none;
-    .navigation__contact_wrapper__col {
-      .row a:last-child {
-        display: none;
-      }
-    }
-  } */
   .navigation__container li {
     padding: 0 35px;
   }
@@ -1669,7 +1667,35 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
     margin-right: auto;
+    margin-left: 20px;
+    border-right: none;
   }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
+    display: inline;
+  }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child br {
+    display: inline;
+    content: " ";
+    padding: 0 5px;
+  }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) a br,
+  .navigation__contact_wrapper__col:nth-child(3) a br,
+  .navigation__contact_wrapper__col:nth-child(4) a br {
+    display: inline;
+    content: " ";
+    padding: 0 5px;
+  }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
+    display: inline;
+  }
+  .nav-svg-icon {
+    width: 40px;
+  }
+  /* a + br {
+    display: inline;
+    content: " ";
+    padding: 0 3px;
+  } */
 }
 
 /* Modal */
