@@ -135,6 +135,10 @@
   .skills .text-sm {
     display: none;
   }
+
+  .nav-svg-icon {
+    width: 34px;
+  }
   /* main section */
   /* skills */
   /*portfolio */
@@ -160,6 +164,10 @@
   .skills .text-sm {
     display: none;
   }
+
+  .nav-svg-icon {
+    width: 40px;
+  }
   
 }
 
@@ -176,14 +184,6 @@
     }
   }
 
-  /* .navigation__contact_wrapper .row:first-child {
-    //display: none;
-    .navigation__contact_wrapper__col {
-      .row a:last-child {
-        display: none;
-      }
-    }
-  } */
   .navigation__container li {
     padding: 0 35px;
   }
@@ -196,5 +196,40 @@
 
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
     margin-right: auto;
+    margin-left: 20px;
+    border-right: none;
   }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
+    display: inline;
+
+    br {
+      display: inline;
+      content: " ";
+      padding: 0 5px;
+    }
+  }
+
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2), 
+  .navigation__contact_wrapper__col:nth-child(3),
+  .navigation__contact_wrapper__col:nth-child(4) {
+    a br {
+      display: inline;
+      content: " ";
+      padding: 0 5px;
+    }
+  }
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
+    display: inline;
+  }
+
+
+  .nav-svg-icon {
+    width: 40px;
+  }
+
+  /* a + br {
+    display: inline;
+    content: " ";
+    padding: 0 3px;
+  } */
 }
