@@ -1623,9 +1623,9 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .nav-svg-icon {
     width: 34px;
   }
-  /* main section */
-  /* skills */
-  /*portfolio */
+  /* .navigation__contact_wrapper .row {
+    justify-content: end;
+  } */
 }
 
 @media (min-width: 992px) {
@@ -1650,6 +1650,15 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 @media (min-width: 1024px) {
+  /* .navigation__contact_wrapper {
+    width: 50%;
+    .row {
+      justify-content: end;
+    }
+  }
+  .navigation__dropdown {
+    width: 50%;
+  } */
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
     display: none;
   }
