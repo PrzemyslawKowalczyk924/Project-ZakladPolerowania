@@ -1623,6 +1623,18 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .nav-svg-icon {
     width: 34px;
   }
+  .navigation__contact_wrapper {
+    width: 50%;
+  }
+  .navigation__contact_wrapper .row {
+    justify-content: end;
+  }
+  .navigation__dropdown {
+    width: 50%;
+  }
+  .navigation__dropdown ul {
+    justify-content: flex-end;
+  }
   /* .navigation__contact_wrapper .row {
     justify-content: end;
   } */
