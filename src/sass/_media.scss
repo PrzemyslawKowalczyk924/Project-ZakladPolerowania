@@ -114,7 +114,7 @@
 //min-width od mobile first
 //max-width od desktop first
 
-@media(max-width: 425px) {
+@media(mmin-width: 320px) {
   .navigation {
     display: none;
   }
@@ -127,7 +127,8 @@
   }
 }
 
-@media(min-width: 768px) {
+//tablet
+@media(min-width: 425px) {
   .hamburger {
     display: none;
   }
