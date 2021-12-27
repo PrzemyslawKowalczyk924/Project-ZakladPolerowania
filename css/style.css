@@ -1601,7 +1601,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
-@media (max-width: 425px) {
+@media (mmin-width: 320px) {
   .navigation {
     display: none;
   }
@@ -1613,7 +1613,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 425px) {
   .hamburger {
     display: none;
   }
