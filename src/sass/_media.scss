@@ -130,9 +130,23 @@
 //tablet
 @media(min-width: 425px) {
 
-  // navigation__dropdown { flex: 1 }
-  // navigation__dropdown ul li { flex: 1 border-top, right bottom 1px solid white }
-  // navigation__dropdown navigation__container li { padding: 0px 26px }
+  .navigation__container {
+    flex-wrap: wrap;
+  }
+
+  .navigation__dropdown {
+     
+    flex: 1; 
+  }
+  .navigation__dropdown ul li { 
+    flex: 1; 
+    border-top: 1px solid white; 
+    border-right: 1px solid white; 
+    border-bottom: 1px solid white; 
+  }
+  .navigation__dropdown navigation__container li { 
+    padding: 0px 26px; 
+  }
 
   .hamburger {
     display: none;

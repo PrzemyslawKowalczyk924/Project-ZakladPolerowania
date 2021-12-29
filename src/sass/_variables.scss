@@ -7,28 +7,3 @@ $color-four: #ffffff;
 $font-text: 'Josefin Sans', sans-serif;
 $font-header: 'Open Sans', sans-serif;
 $transition: all 1s;
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-//* {border: 1px solid red;}
-
-
-body {
-  text-align: center;
-  background: #fff;
-  color: #3d3d3d;
-  font-size: 16px;
-  line-height: 1.7;
-  font-family: $font-text;
-}
-
-section {
-  padding: 108px 0;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
