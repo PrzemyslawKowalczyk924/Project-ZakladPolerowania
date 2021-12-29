@@ -1,28 +1,5 @@
 @charset "UTF-8";
 /* Global */
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-  text-align: center;
-  background: #fff;
-  color: #3d3d3d;
-  font-size: 16px;
-  line-height: 1.7;
-  font-family: "Josefin Sans", sans-serif;
-}
-
-section {
-  padding: 108px 0;
-}
-
-.container {
-  max-width: 1140px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -362,12 +339,27 @@ template {
   display: none;
 }
 
-* {
+*, *::before, *::after {
   box-sizing: border-box;
 }
 
-* {
-  box-sizing: border-box;
+body {
+  text-align: center;
+  background: #fff;
+  color: #3d3d3d;
+  font-size: 16px;
+  line-height: 1.7;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+section {
+  padding: 108px 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
 .col--1 {
@@ -704,10 +696,6 @@ template {
   cursor: pointer;
 }
 
-* {
-  box-sizing: border-box;
-}
-
 .menu-burger {
   position: absolute;
   top: 50%;
@@ -766,10 +754,6 @@ template {
 
 /* Sections */
 /* global container options for top & bottom */
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
 .navigation {
   position: fixed;
   z-index: 9;
@@ -803,10 +787,6 @@ template {
 }
 
 /* global container options for top & bottom */
-*, ::after, ::before {
-  box-sizing: border-box;
-}
-
 /* .navigation__contact_wrapper {
   width: 50%;
 } */
@@ -1169,10 +1149,6 @@ template {
 }
 
 /* media queries */
-* {
-  box-sizing: border-box;
-}
-
 .contact {
   padding: 0;
 }
@@ -1614,6 +1590,21 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 @media (min-width: 425px) {
+  .navigation__container {
+    flex-wrap: wrap;
+  }
+  .navigation__dropdown {
+    flex: 1;
+  }
+  .navigation__dropdown ul li {
+    flex: 1;
+    border-top: 1px solid white;
+    border-right: 1px solid white;
+    border-bottom: 1px solid white;
+  }
+  .navigation__dropdown navigation__container li {
+    padding: 0px 26px;
+  }
   .hamburger {
     display: none;
   }
@@ -1730,10 +1721,6 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
 }
 
 /* Modal */
-* {
-  box-sizing: border-box;
-}
-
 .overlay {
   position: fixed;
   top: 0;
