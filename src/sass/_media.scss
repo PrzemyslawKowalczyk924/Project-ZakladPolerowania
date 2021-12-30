@@ -161,19 +161,26 @@
   }
 
   .navigation__contact_wrapper {
-    width: 50%;
     .row {
       justify-content: end;
     }
   }
 
   .navigation__dropdown {
-    width: 50%;
     ul {
       justify-content: flex-end;
     }
   }
 
+  @media(min-width: 768px) {
+    .navigation__contact_wrapper {
+      width: 50%;
+    }
+
+    .navigation__dropdown {
+      width: 50%;
+    }
+  }
 
   //I left it at night at this moment
   /* .navigation__contact_wrapper .row {
