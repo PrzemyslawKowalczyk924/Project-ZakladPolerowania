@@ -1602,7 +1602,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
     border-right: 1px solid white;
     border-bottom: 1px solid white;
   }
-  .navigation__dropdown navigation__container li {
+  .navigation__dropdown .navigation__container li {
     padding: 0px 26px;
   }
   .hamburger {
@@ -1614,27 +1614,36 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .nav-svg-icon {
     width: 34px;
   }
+  .navigation__contact_wrapper {
+    flex: 1;
+  }
   .navigation__contact_wrapper .row {
-    justify-content: end;
+    justify-content: space-between;
+  }
+  .navigation__contact_wrapper .navigation__contact_wrapper__col:last-child {
+    border-right: none;
   }
   .navigation__dropdown ul {
     justify-content: flex-end;
   }
+  /* .navigation__contact_wrapper .row {
+    justify-content: end;
+  } */
 }
 
-@media (min-width: 425px) and (min-width: 768px) {
+@media (min-width: 768px) {
   .navigation__contact_wrapper {
     width: 50%;
+  }
+  .navigation__contact_wrapper .row {
+    justify-content: space-between;
+  }
+  .navigation__contact_wrapper .row:last-child {
+    border-right: 1px solid white;
   }
   .navigation__dropdown {
     width: 50%;
   }
-}
-
-@media (min-width: 425px) {
-  /* .navigation__contact_wrapper .row {
-    justify-content: end;
-  } */
 }
 
 @media (min-width: 992px) {
