@@ -1661,7 +1661,13 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
-@media (min-width: 768px) {
+@media (min-width: 670px) {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 1000px) {
   .navigation__contact_wrapper {
     width: 50%;
   }
