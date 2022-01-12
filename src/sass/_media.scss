@@ -222,6 +222,26 @@
     font-size: 12px;
   }
 }
+@media (min-width: 936px) {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
+    display: none;
+  }
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+    font-size: 10px;
+  }
+}
+
+@media(min-width: 992px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .skills .text-sm {
+    display: none;
+  }
+}
+
 @media(min-width: 1000px) {
   .navigation__contact_wrapper {
     width: 50%;
@@ -238,45 +258,8 @@
   }
 }
     
-@media(min-width: 992px) {
-
-  .hamburger {
-    display: none;
-  }
-
-  .skills .text-sm {
-    display: none;
-  }
-}
-    
-@media(min-width: 1200px) {
-
-  .hamburger {
-    display: none;
-  }
-
-  .skills .text-sm {
-    display: none;
-  }
-
-  .nav-svg-icon {
-    width: 40px;
-  }
-  
-}
-
 @media(min-width: 1024px) { 
 
-  //trying to center border of contact wrapper
-  /* .navigation__contact_wrapper {
-    width: 50%;
-    .row {
-      justify-content: end;
-    }
-  }
-  .navigation__dropdown {
-    width: 50%;
-  } */
 
   .navigation__contact_wrapper .row {
     
@@ -295,6 +278,33 @@
   }
 }
 
+@media(min-width: 1090px) {
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
+    display: block;
+  }
+}
+    
+@media(min-width: 1200px) {
+
+  .hamburger {
+    display: none;
+  }
+
+  .skills .text-sm {
+    display: none;
+  }
+
+  .nav-svg-icon {
+    width: 40px;
+  }
+
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
+    display: block;
+  }
+  
+}
+
+
 @media(min-width: 1320px) {
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
     display: inline;
@@ -302,9 +312,16 @@
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
     display: inline;
   }
-
+  
   .navigation__contact_wrapper__col {
     margin: 5px 1px 5px 5px;
+  }
+
+  .navigation__contact_wrapper .row i {
+    font-size: 18px;
+  }
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+    font-size: 11px;
   }
 }
 
