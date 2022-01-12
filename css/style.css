@@ -1667,6 +1667,24 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
+@media (min-width: 936px) {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
+    display: none;
+  }
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+    font-size: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .hamburger {
+    display: none;
+  }
+  .skills .text-sm {
+    display: none;
+  }
+}
+
 @media (min-width: 1000px) {
   .navigation__contact_wrapper {
     width: 50%;
@@ -1679,12 +1697,21 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
 }
 
-@media (min-width: 992px) {
-  .hamburger {
+@media (min-width: 1024px) {
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
     display: none;
   }
-  .skills .text-sm {
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
     display: none;
+  }
+  .navigation__container li {
+    padding: 0 35px;
+  }
+}
+
+@media (min-width: 1090px) {
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
+    display: block;
   }
 }
 
@@ -1698,26 +1725,8 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   .nav-svg-icon {
     width: 40px;
   }
-}
-
-@media (min-width: 1024px) {
-  /* .navigation__contact_wrapper {
-    width: 50%;
-    .row {
-      justify-content: end;
-    }
-  }
-  .navigation__dropdown {
-    width: 50%;
-  } */
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
-    display: none;
-  }
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
-    display: none;
-  }
-  .navigation__container li {
-    padding: 0 35px;
+    display: block;
   }
 }
 
@@ -1730,6 +1739,12 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
   .navigation__contact_wrapper__col {
     margin: 5px 1px 5px 5px;
+  }
+  .navigation__contact_wrapper .row i {
+    font-size: 18px;
+  }
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+    font-size: 11px;
   }
 }
 
