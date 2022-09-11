@@ -1601,9 +1601,11 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   }
   .navigation__dropdown ul li {
     flex: 1;
-    border-top: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom: 1px solid white;
+    /* border-top: 1px solid black; 
+    border-right: 1px solid white; 
+    border-bottom: 1px solid black;
+    border-left: 1px solid white;
+    border: 1px solid gray;  */
   }
   .navigation__dropdown ul li {
     padding: 0px 26px;
@@ -1653,6 +1655,12 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   /* .navigation__contact_wrapper .row {
     justify-content: end;
   } */
+  .single_cell_droppdown {
+    border-left: 1px solid gray;
+  }
+  .single_in-cell_dropdown {
+    border-top: 1px solid gray;
+  }
 }
 
 @media (min-width: 532px) {
@@ -1723,7 +1731,7 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
     display: none;
   }
   .nav-svg-icon {
-    width: 40px;
+    width: 34px;
   }
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
     display: block;
