@@ -1221,6 +1221,10 @@ section {
   padding-right: 15px;
 }
 
+.form-wrapper {
+  width: 350px;
+}
+
 .form-section .section-title {
   font-size: 22px;
   font-weight: bold;
@@ -1229,7 +1233,7 @@ section {
 
 .form-section form {
   text-align-last: none;
-  padding: 0 25% 0 25%;
+  /* ten wraper można będzie raczej usunąć, text-align-last nic nie robi? */
 }
 
 .form-section .field {
