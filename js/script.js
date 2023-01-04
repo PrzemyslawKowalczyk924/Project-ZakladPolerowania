@@ -5,7 +5,7 @@ mainSideHamburger.addEventListener('click', function(){
   navBar.classList.toggle('show');
 }); */
 
-const navBar = document.querySelector('.navigation-menu');
+/* const navBar = document.querySelector('.navigation-menu');
 window.addEventListener('scroll', function(){
   
   if (window.location.hash == '' || window.location.hash == '#/main'){
@@ -14,7 +14,7 @@ window.addEventListener('scroll', function(){
     navBar.classList.add('show');
     console.log('zadziałał show z linijki 11');
   }
-});
+}); */
 
 const actualLink = window.location.href;
 
