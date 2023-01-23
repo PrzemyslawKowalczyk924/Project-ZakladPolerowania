@@ -1,5 +1,6 @@
 /*About*/
 
+
 .section-title {
   position: relative;
   font-size: 36px;
@@ -62,11 +63,14 @@
   //z-index: 2; - raczej mozna skasować
 }
 
-.about-wrapper img:hover{
+.about-wrapper img:hover {
   transform: translate(-28px,-20px);
   transition: 1s;
 }
 
+/* .about-wrapper img:active {
+  
+} */
 .work-image {
   position: relative;
   //width: 50%;
@@ -90,4 +94,21 @@
 .work-image:hover:after { 
   z-index: -1;
   //transform: translate(-20px,-20px);
+  // tu prawdopodobnie trzeba będzie tego styla całego skasować, chyba, że mi sie jeszcze gdzie przyda bo ten z index raczej nic nie robi
+}
+
+//* icon inside photos *//
+
+.work-image .old-camera {
+  position: absolute;
+  width: 7%;
+  top: 45%;
+  left: 48%;
+  margin: 0;
+  transition: 1s;
+}
+
+.old-camera:hover:after {
+  transform: translate(-28px,-20px);
+  
 }
