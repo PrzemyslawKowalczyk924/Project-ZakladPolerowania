@@ -42,3 +42,38 @@ window.addEventListener('hashchange', function(){
     console.log('zadziabałoooooo');
   }
 });
+
+const photoWrapper = document.querySelectorAll('.work-image > img');
+const photoIcon = document.querySelectorAll('.old-camera');
+
+console.log(photoWrapper)
+
+const photoWrapperArr = Array.from(photoWrapper);
+console.log(photoWrapperArr);
+
+const photoToDis = photoWrapper[1].style.display = 'none';
+
+/* photoWrapper.addEventListener('transitionend', () => {
+  elem.style.display = 'block',
+  console.log('mutacja');
+})
+console.log(photoToDis) */
+
+/* photoToDis.addEventListener('transitionend', () => {
+  elem.style.display = 'block',
+  console.log('mutacja');
+}) */
+
+for(let elem of photoWrapperArr) {
+  elem.addEventListener('transitionend', () => {
+    photoWrapper[1].style.display = 'block',
+    console.log('transistioned');
+  })
+}
+
+/* photoWrapperArr.addEventListener('transitionend', () => {
+  photoIcon.style.display = 'none',
+  console.log('transistioned');
+  });
+
+ */
