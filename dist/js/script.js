@@ -51,7 +51,7 @@ console.log(photoWrapper)
 const photoWrapperArr = Array.from(photoWrapper);
 console.log(photoWrapperArr);
 
-const photoToDis = photoWrapper[1].style.display = 'none';
+//const photoToDis = photoWrapper[1].style.display = 'none';
 
 /* photoWrapper.addEventListener('transitionend', () => {
   elem.style.display = 'block',
@@ -65,15 +65,25 @@ console.log(photoToDis) */
 }) */
 
 for(let elem of photoWrapperArr) {
-  elem.addEventListener('transitionend', () => {
-    photoWrapper[1].style.display = 'block',
-    console.log('transistioned');
+  elem.addEventListener('mouseenter', (event) => {
+    photoWrapper[1].style.transform = 'translate(-28px, -20px)',
+    photoWrapper[1].style.transition = '1s'
+    elem.addEventListener('transitionend', (event) => {
+      console.log('trazitusend')
+      console.log(event)
+      photoWrapper[1].style.display = 'block'
+    })
+    
+    elem.addEventListener('transitionrun', (event) => {
+      console.log('start!')
+    })
+  })
+
+  elem.addEventListener('mouseleave', (event) => {
+    console.log('leave')
+    photoWrapper[0].style.transform = 'translate(28px, 20px)',
+    photoWrapper[0].style.transition = '1s',
+    photoWrapper[1].style.display = 'none'
+   
   })
 }
-
-/* photoWrapperArr.addEventListener('transitionend', () => {
-  photoIcon.style.display = 'none',
-  console.log('transistioned');
-  });
-
- */

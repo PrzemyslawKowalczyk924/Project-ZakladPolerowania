@@ -55,7 +55,7 @@
 }
 
 //<--->
-.about-wrapper img {
+.about-wrapper .img-work {
   width: 60%;
   //padding: 60px 0 60px 0; -> powodował przesuwanie się obrazka przez uwzględnienie paddingu
   margin: 60px 0 60px 0;
@@ -63,7 +63,7 @@
   //z-index: 2; - raczej mozna skasować
 }
 
-.about-wrapper img:hover {
+.about-wrapper .img-work:hover {
   transform: translate(-28px,-20px);
   transition: 1s;
 }
@@ -100,6 +100,7 @@
 //* icon inside photos *//
 
 .work-image .old-camera {
+  display: none;
   position: absolute;
   width: 7%;
   top: 45%;
@@ -108,7 +109,6 @@
   transition: 1s;
 }
 
-.old-camera:hover:after {
+/* .old-camera:hover:after {
   transform: translate(-28px,-20px);
-  
-}
+} */
