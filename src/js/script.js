@@ -44,46 +44,53 @@ window.addEventListener('hashchange', function(){
 });
 
 const photoWrapper = document.querySelectorAll('.work-image > img');
-const photoIcon = document.querySelectorAll('.old-camera');
 
+const workImage = document.querySelectorAll('.img-work');
+//const workImgArr = Array.from(workImage);
+const photoIcon = document.querySelectorAll('.old-camera');
 console.log(photoWrapper)
+
+console.log(workImage)
+//console.log(workImgArr)
+console.log(photoIcon)
 
 const photoWrapperArr = Array.from(photoWrapper);
 console.log(photoWrapperArr);
 
 //const photoToDis = photoWrapper[1].style.display = 'none';
 
-/* photoWrapper.addEventListener('transitionend', () => {
-  elem.style.display = 'block',
-  console.log('mutacja');
-})
-console.log(photoToDis) */
-
-/* photoToDis.addEventListener('transitionend', () => {
-  elem.style.display = 'block',
-  console.log('mutacja');
-}) */
+//problem byl chyba w piętli. Możliwe, że dlatego transitioned nie działało. Prawodpodobnie nie powinno jej tutaj być. 
+//Powinienem bezpośrtednio eventy listinerów wykonywać na poszczególnych elementach: img + ikona. Wtedy nasluchiwacze będąc ciągle aktywne, a 
+//możliwe, że dltego nie działał mi transitioned poprawnie, gdyż pętla wykonyje się raz dla każdego elementu. Stąd to niepodliczenie końcowe transitioned
 
 for(let elem of photoWrapperArr) {
   elem.addEventListener('mouseenter', (event) => {
+    console.log('enter')
     photoWrapper[1].style.transform = 'translate(-28px, -20px)',
     photoWrapper[1].style.transition = '1s'
-    elem.addEventListener('transitionend', (event) => {
-      console.log('trazitusend')
-      console.log(event)
-      photoWrapper[1].style.display = 'block'
-    })
-    
-    elem.addEventListener('transitionrun', (event) => {
-      console.log('start!')
-    })
-  })
+    if(event.target == photoWrapper[0]) {
+      photoWrapper[1].style.opacity = '1'
+    }
+    if(event.target == photoWrapper[1]) {
+      photoWrapper[0].style.transform = 'translate(-28px, -20px)',
+      photoWrapper[0].style.transition = '1s'
+    }
 
-  elem.addEventListener('mouseleave', (event) => {
-    console.log('leave')
-    photoWrapper[0].style.transform = 'translate(28px, 20px)',
-    photoWrapper[0].style.transition = '1s',
-    photoWrapper[1].style.display = 'none'
-   
+    //console.log(event.target);
   })
+  
+  elem.addEventListener('mouseleave', (event) => {
+    photoWrapper[0].style.transform = 'translate(28px, 20px)',
+    photoWrapper[0].style.transition = '1s'
+    photoWrapper[1].style.transform = 'translate(-28px, -20px)',
+    photoWrapper[1].style.opacity = '0'
+  /*   if (event.target != photoWrapper[0]) {
+      console.log('leave')
+    }
+ */
+ /*  if(event.target != photoWrapper[1]) {
+    photoWrapper[0].style.transform = 'translate(28px, 20px)',
+    photoWrapper[0].style.transition = '1s'
+  } */
+})
 }
