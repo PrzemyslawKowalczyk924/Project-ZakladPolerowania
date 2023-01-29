@@ -25,25 +25,21 @@ hamburgerNav.addEventListener('click', function(){
 
 window.addEventListener('hashchange', function(){
   const fixedTopNav = document.querySelector('.fixed-top');
-  console.log('top', fixedTopNav);
+  //console.log('top', fixedTopNav);
   // eslint-disable-next-line no-constant-condition
   if (window.location.hash == 'http://localhost:3000/#/contact'){
     //document.getElementById('myLinks').style.display = 'block';
-    console.log('bajzel!!!!!');
     navBar.classList.add('hide');
-    console.log('dybie, bo' + actualLink + 'to sekcja kontakt');
-  } else {
-    console.log('coś nie pykło', actualLink);
-    //document.getElementById('myLinks').style.display = 'none';
-  }
-
+  } 
   if(window.location.hash == 'http://localhost:3000/#/gallery'){
     document.getElementById('myLinks').style.display = 'none';
-    console.log('zadziabałoooooo');
   }
 });
 
 //icon-animation
+
+const galleryBar = document.getElementById('gallery');
+const aboutBar = document.getElementById('about');
 
 const workImage = document.querySelectorAll('.img-work');
 const workImgArr = Array.from(workImage);
@@ -71,14 +67,26 @@ function ImgAndIconListener(photo, icon) {
     icon[index].style.opacity = '0';
   }});
 
-  icon[index].addEventListener('mouseenter', (event) => {
+  icon[index].addEventListener('mouseenter', event => {
     if(event.target == icon[index]) {
       photo[index].style.transform = 'translate(-28px, -20px)';
       icon[index].style.transform = 'translate(-28px, -20px)';
       icon[index].style.opacity = '1';
+      icon[index].addEventListener('click', () => {
+        window.location.hash = '#/gallery';
+        aboutBar.classList.remove('active');
+        galleryBar.classList.add('active', 'sub-gallery');
+        photo[index].style.transform = 'translate(0, 0)';
+        icon[index].style.transform = 'translate(28px, 20px)';
+        icon[index].style.opacity = '0';
+      });
     }
   });
  }
 }
 
 ImgAndIconListener(workImgArr, photoIconArr);
+
+console.log(window.location.hash);
+
+console.log(galleryBar);
