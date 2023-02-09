@@ -1,6 +1,7 @@
 /* eslint-disable indent */
 //import { init } from 'browser-sync';
 import { select, classNames } from './settings.js';
+import { resizerOfWidth } from './media.js';
 
 export const app = {
     initPages: function(){
@@ -100,3 +101,4 @@ export const app = {
 };
 
 app.init();
+resizerOfWidth();
