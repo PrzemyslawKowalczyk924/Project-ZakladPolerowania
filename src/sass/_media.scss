@@ -125,6 +125,14 @@
   .portfolio .gallery-picture .portfolio-img {
     height: 225px;
   }
+
+  .work-image::after {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: inherit;
+  }
 }
 
 //min-width od mobile first
