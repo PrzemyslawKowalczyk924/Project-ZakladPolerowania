@@ -20,7 +20,7 @@ const actualLink = window.location.href;
 
 const hamburgerNav = document.querySelector('.hamburger');
 hamburgerNav.addEventListener('click', function(){
-  navBar.classList.toggle('show');
+  //navBar.classList.toggle('show'); z jakiegoś powodu tutaj mamm nieistniejący navBar
 });
 
 window.addEventListener('hashchange', function(){

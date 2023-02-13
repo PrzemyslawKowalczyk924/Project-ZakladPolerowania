@@ -6,6 +6,7 @@ export const select = {
     },
     nav: {
         links: '.navigation__dropdown a:not(.icon)',
+        hamburgerLinks: '.hamburger__links a:not(.icon)'
       },
     navigation: {
         top: '.fixed-top',

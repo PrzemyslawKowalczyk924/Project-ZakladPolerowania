@@ -9,7 +9,10 @@ export const app = {
 
         thisApp.pages = document.querySelector(select.containerOf.pages).children;
         thisApp.navLinks = document.querySelectorAll(select.nav.links);
+        thisApp.hamburgerLinks = document.querySelectorAll(select.nav.hamburgerLinks);
 
+        console.log('hambi', thisApp.hamburgerLinks);
+        console.log('navLinks', thisApp.navLinks);
         const idFromHash = window.location.hash.replace('#/', '');
         
         let pageMatchingHash = thisApp.pages[0].id;
@@ -36,6 +39,19 @@ export const app = {
                 
                 thisApp.activatePage(id);
             });
+        }
+        for(let link of thisApp.hamburgerLinks){
+            link.addEventListener('click', function(event){
+                const clickedHambElement = this;
+                event.preventDefault();
+
+                /* get page id from href attribute */
+                const id = clickedHambElement.getAttribute('href').replace('#', '');
+
+                /* run thisApp.activePage  with that id */
+                window.location.hash = '#/' + id;
+                thisApp.activatePage(id);
+            })
         }
     },
 
