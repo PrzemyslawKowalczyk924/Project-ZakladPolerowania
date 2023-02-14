@@ -11,8 +11,6 @@ export const app = {
         thisApp.navLinks = document.querySelectorAll(select.nav.links);
         thisApp.hamburgerLinks = document.querySelectorAll(select.nav.hamburgerLinks);
 
-        console.log('hambi', thisApp.hamburgerLinks);
-        console.log('navLinks', thisApp.navLinks);
         const idFromHash = window.location.hash.replace('#/', '');
         
         let pageMatchingHash = thisApp.pages[0].id;
@@ -99,7 +97,7 @@ export const app = {
                 console.log('zadziałało!!!');
             }
 
-            if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'){
+            if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'  || pageId == 'technology'  || pageId == 'polishing'){
                 document.getElementById('myLinks').style.display = 'none';
             }
 
