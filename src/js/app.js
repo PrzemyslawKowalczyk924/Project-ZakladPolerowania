@@ -115,4 +115,4 @@ export const app = {
 };
 
 app.init();
-resizerOfWidth();
+//resizerOfWidth();

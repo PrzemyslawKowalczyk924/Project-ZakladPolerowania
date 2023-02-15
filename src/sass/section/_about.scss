@@ -52,13 +52,13 @@
   width: 50%;
 }
 
-.about-wrapper .img-work {
+.img-work {
   border: 1px solid black;
   width: 60%;
   margin: 60px 0 60px 0;
 }
 
-.about-wrapper .img-work:hover {
+.img-work:hover {
   transform: translate(-28px,-20px);
   transition: 1s;
   border: 1px solid black;
@@ -98,3 +98,8 @@
   z-index: 3;
   cursor: pointer;
 }
+
+/* Mobile View */
+/* .mobile-about {
+  display: none;
+} */

@@ -1,7 +1,5 @@
 @media(max-width: 768px) {
   
-  // MOBILE !!!  
-  
   /* Main section*/
 
   /* Hamburger */
@@ -137,6 +135,55 @@
   .text-wrapper {
     width: inherit;
   }
+
+  // MOBILE !!!  
+
+  .about {
+    display: none;
+  }
+
+  .section-title {
+    //margin: 0 0 15px 0;
+    font-size: xx-large;
+  }
+
+  .mobile-about {
+    display: block;
+  }
+
+  .about-image-wrapper {
+    width: inherit;
+  }
+
+  .work-image::after {
+    content: none;
+    display: none;
+  }
+}
+
+@media(min-width: 769px) {
+  .mobile-about {
+    display: none;
+  }
+
+}
+
+@media(min-width: 769px) and (max-width: 920px) {
+  .work-image::after {
+    width: 60%;
+    height: 60%;
+    top: 10%;
+    left: 10%;
+  }
+}
+
+@media(min-width: 921px) and (max-width: 1090px) {
+  .work-image::after {
+    width: 63%;
+    height: 64%;
+    top: 8%;
+    left: 13%;
+  }
 }
 
 //min-width od mobile first
@@ -158,14 +205,9 @@
 }
 
 @media(min-width: 376px ) and (max-width: 425px) {
-  .companys-data-section {
-    //padding: 5px 20px 30px 80px;
-  }
-
   .form-wrapper {
     width: 70%;
   }
-
 }
 
 @media(min-width: 375px ) and (max-width: 425px) {
@@ -191,6 +233,12 @@
   }
 }
 
+@media(min-width: 426px) and (max-width: 768px) {
+  .section-title {
+    margin: 50px 0 50px 0;
+  }
+}
+
 @media(max-width: 375px) {
   .price ol {
     margin-left: 30px;
@@ -202,6 +250,7 @@
   .portfolio .box {
     flex: 0 0 50%;
   }
+  
 }
 
 //tablet
@@ -283,8 +332,6 @@
     }
   }
 
-  
-
   //I left it at night at this moment
   /* .navigation__contact_wrapper .row {
     justify-content: end;
@@ -295,7 +342,9 @@
   .single_in-cell_dropdown {
     border-top: 1px solid gray;
   }
+
 }
+
 @media (min-width: 532px) {
   .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
     display: block;
@@ -333,9 +382,6 @@
     .row {
       justify-content: space-between;
     }
-    .row:last-child {
-      //border-right: 1px solid white;
-    }
   }
 
   .navigation__dropdown {
@@ -344,7 +390,6 @@
 }
     
 @media(min-width: 1024px) { 
-
 
   .navigation__contact_wrapper .row {
     
