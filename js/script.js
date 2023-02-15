@@ -90,3 +90,6 @@ ImgAndIconListener(workImgArr, photoIconArr);
 console.log(window.location.hash);
 
 console.log(galleryBar);
+
+const screenWidth = window.screen.width;
+console.log(screenWidth);
