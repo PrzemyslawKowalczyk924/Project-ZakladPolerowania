@@ -169,7 +169,7 @@
 }
 
 /* @media(min-width: 320px) and (max-width: 425px) {
-  $width: 60%;
+  $width: 50%;
   $height: 55%;
   $top: (5% / $width) * 100%;
   $left: (4% / $width) * 100%;
@@ -180,10 +180,13 @@
     top: $top;
     left: $left;
   }
-}
+  .about-image-wrapper {
+    width: $width + 1%;
+  }
+} */
 
-@media(min-width: 426px) and (max-width: 768px) {
-  $width: 55%;
+@media(min-width: 426px) and (max-width: 550px) {
+/*   $width: 55%;
   $height: 55%;
   $top: (3% / $height) * 100%;
   $left: (3% / $width) * 100%;
@@ -193,9 +196,12 @@
     height: $height;
     top: $top;
     left: $left;
-  }
-} */
+  } */
 
+  .about-image-wrapper {
+    width: 75%;
+  }
+}
 @media(min-width: 769px) {
   .mobile-about {
     display: none;
@@ -247,7 +253,6 @@
     align-items: baseline;
     justify-content: center;
     align-content: center;
-    //padding: 5px 20px 30px 40px;
   }
 }
 
@@ -271,6 +276,15 @@
     flex: 0 0 100%;
     order: 6;
   }
+
+  .about-image-wrapper {
+    width: 80%;
+  }
+
+  .about-description {
+    hyphens: auto;
+    word-spacing: -1px;
+  }
 }
 
 @media(min-width: 500px) and (max-width: 768px) {
@@ -283,6 +297,11 @@
 @media(min-width: 426px) and (max-width: 768px) {
   .section-title {
     margin: 50px 0 50px 0;
+  }
+
+  .about-description {
+    hyphens: auto;
+    word-spacing: normal;
   }
 }
 
@@ -297,7 +316,6 @@
   .portfolio .box {
     flex: 0 0 50%;
   }
-  
 }
 
 //tablet
@@ -491,7 +509,7 @@
   }
   
   .navigation__contact_wrapper__col {
-    margin: 5px 1px 5px 5px;
+    margin: auto;
   }
 
   .navigation__contact_wrapper .row i {
@@ -502,16 +520,23 @@
   }
 }
 
+@media(min-width: 1441px) {
+  .navigation__contact_wrapper .row {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
 @media(min-width: 2559px) {
   .navigation__contact_wrapper {
     flex-grow: 1;
   }
 
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
+  /* .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
     margin-right: 155px;
     margin-left: 20px;
     border-right: none;
-  }
+  } */
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
     display: inline;
 
@@ -541,6 +566,6 @@
   }
 
   .navigation__contact_wrapper__col {
-    margin: 5px 0 5px 0;
+    margin: auto;
   }
 }
