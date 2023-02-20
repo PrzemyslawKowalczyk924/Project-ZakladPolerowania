@@ -421,7 +421,8 @@
     font-size: 12px;
   }
 }
-@media (min-width: 936px) {
+
+@media (min-width: 923px) {
   .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
     display: none;
   }
@@ -528,38 +529,11 @@
 }
 
 @media(min-width: 2559px) {
+
+  //flex-grow:1 pewno też do smietnika
   .navigation__contact_wrapper {
     flex-grow: 1;
   }
-
-  /* .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child {
-    margin-right: 155px;
-    margin-left: 20px;
-    border-right: none;
-  } */
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
-    display: inline;
-
-    br {
-      display: inline;
-      content: " ";
-      padding: 0 5px;
-    }
-  }
-
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2), 
-  .navigation__contact_wrapper__col:nth-child(3),
-  .navigation__contact_wrapper__col:nth-child(4) {
-    a br {
-      display: inline;
-      content: " ";
-      padding: 0 5px;
-    }
-  }
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
-    display: inline;
-  }
-
 
   .nav-svg-icon {
     width: 40px;
