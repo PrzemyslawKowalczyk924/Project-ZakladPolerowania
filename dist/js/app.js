@@ -97,8 +97,9 @@ export const app = {
                 console.log('zadziałało!!!');
             }
 
-            if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'  || pageId == 'technology'  || pageId == 'polishing'){
+            if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'  || pageId == 'technology'  || pageId == 'polishing'|| pageId == 'grinding'|| pageId == 'washing'){
                 document.getElementById('myLinks').style.display = 'none';
+                console.log('zadziałało!!!if');
             }
 
             if(pageId == 'javascript:void(0);'){
