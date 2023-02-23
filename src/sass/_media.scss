@@ -1,5 +1,8 @@
 @media(max-width: 768px) {
   
+  .navigation {
+    display: none;
+  }
   /* Main section*/
 
   /* Hamburger */
@@ -12,6 +15,14 @@
   .page-subtitle {
     font-size: 25px;
   }
+
+  .intro p {
+    font-size: 20px;
+  }
+
+  /* #main .about .section-title {
+    font-size: 20px;
+  } */
 
   .hamburger-icon {
     width: 20px;
@@ -41,7 +52,7 @@
     hyphens: auto;
     word-spacing: -1px;
     display: block;
-    font-size: 14px;
+    font-size: 13px;
   }
 
   /* portfolio */
@@ -113,9 +124,8 @@
     height: 225px;
   }
 
-  
   .section-title {
-    font-size: inherit;
+    font-size: 20px;
   }
   
   .text-wrapper {
@@ -124,30 +134,13 @@
   
   // MOBILE !!!  
   
- /*  .work-image::after {
-    width: 100%;
-  } */
   .service {
     display: none;
-  }
-
-  .section-title {
-    //margin: 0 0 15px 0;
-    font-size: xx-large;
   }
 
   .mobile-about {
     display: block;
   }
-
- /*  .about-image-wrapper {
-    width: inherit;
-  } */
-
-  /* .work-image::after {
-    content: none;
-    display: none;
-  } */
 
   .work-image::after {
     width:100%;
@@ -192,10 +185,15 @@
   }
 }
 @media(min-width: 769px) {
+  .page-title {
+    font-size: 40px;
+  }
+  .page-subtitle {
+    font-size: 30px;
+  }
   .mobile-about {
     display: none;
   }
-
   .about-image-wrapper {
     padding: 5%;
   }
@@ -232,9 +230,7 @@
 //max-width od desktop first
 
 @media(min-width: 320px) {
-  .navigation {
-    display: none;
-  }
+  
   .companys-data-section {
     display: flex;
     flex-wrap: wrap;
@@ -258,6 +254,12 @@
 }
 
 @media(max-width: 425px) {
+  .page-title {
+    font-size: 24px;
+  }
+  .page-subtitle {
+    font-size: 18px;
+  }
   .sub-gallery .box:nth-child(3) {
     flex: 0 0 100%;
   }
@@ -301,7 +303,6 @@
 }
 
 @media(max-width: 768px) {
-  
   .portfolio .box {
     flex: 0 0 50%;
   }
@@ -445,6 +446,9 @@
 }
     
 @media(min-width: 1024px) { 
+  .page-title {
+    font-size: 60px;
+  }
 
   .navigation__contact_wrapper .row {
     
