@@ -69,7 +69,7 @@
   /* price */
 
   .price ol {
-    margin-left: 80px;
+    margin-left: 10%;
   }
 
   /* contact */
@@ -276,6 +276,11 @@
     hyphens: auto;
     word-spacing: -1px;
   }
+
+  .abilities p {
+    padding: 48px 35px;
+    font-size: 20px;
+  }
 }
 
 @media(min-width: 500px) and (max-width: 768px) {
@@ -293,12 +298,6 @@
   .about-description {
     hyphens: auto;
     word-spacing: normal;
-  }
-}
-
-@media(max-width: 375px) {
-  .price ol {
-    margin-left: 30px;
   }
 }
 
