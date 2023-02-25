@@ -81,14 +81,9 @@
   margin: 0 0 30px 0;
 }
 
-.form-section form {
-  text-align-last: none;
-  /* ten wraper można będzie raczej usunąć, text-align-last nic nie robi? */
-}
-
 .form-section .field {
   font-size: 18px;
-  /* dokończyć font-size na lewo i prawo w section-contact*/
+  padding: 1%;
 }
 
 button, input, optgroup, select, textarea {
