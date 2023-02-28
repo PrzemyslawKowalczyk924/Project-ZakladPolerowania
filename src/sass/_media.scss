@@ -141,37 +141,14 @@
     top: -10%;
     left: -10%;
   }
+
+  .img-work {
+    pointer-events: none;
+  }
 }
 
-/* @media(min-width: 320px) and (max-width: 425px) {
-  $width: 50%;
-  $height: 55%;
-  $top: (5% / $width) * 100%;
-  $left: (4% / $width) * 100%;
-
-  .work-image::after {
-    width: $width;
-    height: $height;
-    top: $top;
-    left: $left;
-  }
-  .about-image-wrapper {
-    width: $width + 1%;
-  }
-} */
 
 @media(min-width: 426px) and (max-width: 550px) {
-/*   $width: 55%;
-  $height: 55%;
-  $top: (3% / $height) * 100%;
-  $left: (3% / $width) * 100%;
-
-  .work-image::after {
-    width: $width;
-    height: $height;
-    top: $top;
-    left: $left;
-  } */
 
   .about-image-wrapper {
     width: 75%;
@@ -196,33 +173,6 @@
   }
 }
 
-/* @media(min-width: 570px) and (max-width: 768px) {
-  .work-image::after {
-    width: 57%;
-    height: 65%;
-    top: 5%;
-    left: 11%;
-  }
-} */
-
-/* @media(min-width: 769px) and (max-width: 920px) {
-  .work-image::after {
-    width: 60%;
-    height: 60%;
-    top: 10%;
-    left: 10%;
-  }
-}
-
-@media(min-width: 921px) and (max-width: 1090px) {
-  .work-image::after {
-    width: 63%;
-    height: 64%;
-    top: 8%;
-    left: 13%;
-  }
-} */
-
 //min-width od mobile first
 //max-width od desktop first
 
@@ -237,12 +187,6 @@
     align-content: center;
   }
 }
-
-/* @media(min-width: 376px ) and (max-width: 425px) {
-  .form-wrapper {
-    width: 70%;
-  }
-} */
 
 @media(max-width: 425px) {
   .page-title {
@@ -413,7 +357,7 @@
 }
 
 @media (min-width: 670px) {
-  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a, .street__and__code {
     font-size: 12px;
   }
 }
@@ -422,7 +366,7 @@
   .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
     display: none;
   }
-  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a, .street__and__code {
     font-size: 10px;
   }
 }
@@ -515,7 +459,7 @@
   .navigation__contact_wrapper .row i {
     font-size: 18px;
   }
-  .navigation__contact_wrapper .navigation__contact_wrapper__col a {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col a, .street__and__code {
     font-size: 11px;
   }
 }
