@@ -13,10 +13,10 @@
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
-        <div class="hamburger main-nav">
-            <a href="#home" class="active-hamburger">Zakład Polerowania Metali<br>Anna Kowalczyk</a>
+        <div class="hamburger">
+            <div class="active-hamburger">Zakład Polerowania Metali<br>Anna Kowalczyk</div>
             <!-- Navigation links (hidden by default) -->
-            <div id="myLinks" class="hamburger__links">
+            <div id="hamburgerDropDown" class="hamburger__links">
                 <a class="navbar-brand" href="#main"><i class="logo far fa-gem"></i></a>
                 <a class="start" href="#main"/>start</a>
                 <a class="start" href="#about"/>o nas</a>
@@ -29,9 +29,9 @@
                 <a class="start" href="#contact"/>kontakt</a>
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-            <a class="icon" onclick="myFunction()">
+            <button class="icon">
                 <i class="fa fa-bars"></i>
-            </a>
+            </button>
         </div>
         <nav class="navigation">
             <div class="navigation__container">  
