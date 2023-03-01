@@ -1,7 +1,5 @@
 /* eslint-disable indent */
-//import { init } from 'browser-sync';
 import { select, classNames } from './settings.js';
-import { resizerOfWidth } from './media.js';
 
 export const app = {
     initPages: function(){
@@ -98,7 +96,7 @@ export const app = {
             }
 
             if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'  || pageId == 'technology'  || pageId == 'polishing'|| pageId == 'grinding'|| pageId == 'washing'){
-                document.getElementById('myLinks').style.display = 'none';
+                document.getElementById('hamburgerDropDown').style.display = 'none';
                 console.log('zadziałało!!!if');
             }
 
@@ -116,4 +114,3 @@ export const app = {
 };
 
 app.init();
-//resizerOfWidth();

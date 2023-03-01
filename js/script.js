@@ -1,18 +1,5 @@
 'use strict';
 
-window.addEventListener('hashchange', function(){
-  const fixedTopNav = document.querySelector('.fixed-top');
-  //console.log('top', fixedTopNav);
-  // eslint-disable-next-line no-constant-condition
-  if (window.location.hash == 'http://localhost:3000/#/contact'){
-    //document.getElementById('myLinks').style.display = 'block';
-    navBar.classList.add('hide');
-  } 
-  if(window.location.hash == 'http://localhost:3000/#/gallery'){
-    document.getElementById('myLinks').style.display = 'none';
-  }
-});
-
 //button gallery
 
 const mainDiv = document.querySelector('#main');
@@ -33,3 +20,16 @@ buttonGallery.forEach(button => {
     galleryBar.classList.add('active', 'sub-gallery');
   });
 });
+
+//hamburger on & off
+
+const hamburgerIcon = document.querySelector('.icon');
+const hamburgerDropDown = document.getElementById('hamburgerDropDown');
+
+hamburgerIcon.addEventListener('click', function() {
+  if (hamburgerDropDown.style.display === 'block') {
+    hamburgerDropDown.style.display = 'none';
+  } else {
+    hamburgerDropDown.style.display = 'block';
+  }
+})
