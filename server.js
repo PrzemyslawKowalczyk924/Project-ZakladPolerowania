@@ -1,5 +1,24 @@
-const os = require('os');
+const express = require('express');
+const cors = require('cors');
+const app = express();
+const nodemailer = require('nodemailer');
 
-console.log('Platform: ', os.platform());
-console.log('Arch: ', os.arch());
-console.log('user: ', os.userInfo());
+const PORT = process.env.PORT || 5000;
+
+//Midleware
+
+app.use(cors({origin: 'http://localhost:3000'}));
+app.use(express.static('src'));
+app.use(express.json());
+
+app.get('/', (req, res) => {
+    res.sendFile(__dirname + '/src/index.html');
+});
+
+app.post('/', (req, res) => {
+    console.log(req.body);
+});
+
+app.listen(PORT, () => {
+    console.log(`Server is running on PORT ${PORT}`);
+})
