@@ -9,22 +9,17 @@
         "init:files": "touch README.md src/index.html src/sass/style.scss src/js/script.js",
         "init:gitignore": "curl https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore -o .gitignore",
         "init:gitignore:custom": "echo \"dist\" >> .gitignore",
-        
         "test": "npm-run-all test:*",
         "test:html": "globstar nu-html-checker dist/*.html",
         "test:js": "eslint --fix src/js/",
         "test:scss": "stylelint --fix src/sass/",
-        
         "build": "npm-run-all build:* ",
         "build:clean": "mkdirp dist && rm -r dist && mkdirp dist",
         "build:copy": "copyfiles -a -u 1 -e \"**/sass/**/*\" -e \"**/.gitkeep\" \"src/**/*\" dist",
-       
         "build:sass": "sass --style=compressed --no-source-map src/sass:dist/css",
         "build:autoprefixer": "postcss dist/css/*.css --use autoprefixer -d dist/css",
-        
         "build-dev": "npm-run-all build-dev:sass build:autoprefixer",
         "build-dev:sass": "sass --style=expanded --source-map src/sass:dist/css",
-        
         "watch": "npm-run-all build build-dev -p watch:*",
         "watch:browsersync": "browser-sync start --server dist --files \"dist/**/*\" --ignore \"dist/db/**/*\"",
         "watch:sassprefixer": "onchange \"src/sass/**/*.scss\" -- npm run build-dev",
@@ -34,7 +29,9 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
-        "json-server": "^0.16.2"
+        "express": "^4.18.2",
+        "json-server": "^0.16.2",
+        "nodemailer": "^6.9.1"
     },
     "devDependencies": {
         "autoprefixer-cli": "^1.0.0",
@@ -43,12 +40,12 @@
         "eslint": "^5.14.1",
         "globstar": "^1.0.0",
         "mkdirp": "^0.5.1",
-        "postcss": "^8.2.6",
-        "postcss-cli": "^8.3.1",
-        "sass": "^1.57.1",
         "npm-run-all": "^4.1.5",
         "nu-html-checker": "^0.1.0",
         "onchange": "^5.2.0",
+        "postcss": "^8.2.6",
+        "postcss-cli": "^8.3.1",
+        "sass": "^1.57.1",
         "stylelint": "^9.10.1",
         "stylelint-scss": "^3.5.4"
     }
