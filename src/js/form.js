@@ -15,7 +15,7 @@ contactForm.addEventListener('submit', (event) => {
     }
 
     let xhr = new XMLHttpRequest();
-    xhr.open('POST', '/#/contact');
+    xhr.open('POST', 'http://localhost:5000');
     xhr.setRequestHeader('content-type', 'application/json');
     console.log(xhr);
     xhr.onload = function() {
