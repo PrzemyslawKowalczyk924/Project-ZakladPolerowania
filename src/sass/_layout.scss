@@ -1,9 +1,12 @@
-//* {border: 1px solid red;}
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 body {
+  @font-face {
+    font-family: Arial;
+    src: local("Arial");
+  }
   text-align: center;
   background: #fff;
   color: #3d3d3d;
