@@ -92,18 +92,11 @@ export const app = {
 
             if(pageId == 'gallery' || pageId == 'about' || pageId == 'offer'){
                 navBar.classList.remove('hide');
-                console.log('zadziałało!!!');
             }
 
             if(pageId == 'main' || pageId == 'gallery' || pageId == 'about' || pageId == 'offer' || pageId == 'contact'  || pageId == 'technology'  || pageId == 'polishing'|| pageId == 'grinding'|| pageId == 'washing'){
                 document.getElementById('hamburgerDropDown').style.display = 'none';
-                console.log('zadziałało!!!if');
             }
-
-            if(pageId == 'javascript:void(0);'){
-                console.log('przynajmniej dybie');
-            }
-
     },
 
     init: function(){
