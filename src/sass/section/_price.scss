@@ -1,5 +1,7 @@
-.price i {
-    font-size: xx-large;
+.price img {
+    width: 40px;
+    height: 40px;
+    filter: contrast(0.5);
 }
 .price ol {
     padding-left: 0;
@@ -20,12 +22,9 @@
 
 .price .text-left {
     text-align: left!important;
-    //margin-left: 325px;
 }
 
 .price p {
-    //border-left: 4px solid #eee;
-    //margin: auto;
     max-height: 500px;
     padding: 0 25px 0 25px;
     max-width: 500px;

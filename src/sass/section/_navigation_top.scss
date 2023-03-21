@@ -1,7 +1,8 @@
 /* global container options for top & bottom */
 
 .navigation__contact_wrapper__col {
-  margin: 5px auto 5px auto;
+  display: flex;
+  margin: 7px auto 5px auto;
   padding: 0 5px 0 5px;
   text-decoration: none;
   font-size: small;
@@ -9,11 +10,10 @@
   line-height: normal;
 }
 
-.navigation__contact_wrapper .row i {
+.navigation__contact_wrapper .row img {
   align-content: center;
   text-align: center;
   margin: auto 5px;
-  margin-right: 10px;
   font-size: x-large;
 }
 
@@ -26,18 +26,24 @@
 .navigation__contact_wrapper__col a {
   color: white;
   line-height: normal;
-  margin-right: 5px;
+  margin-right: 12px;
   text-decoration: none;
   margin-top: auto;
   margin-bottom: auto;
 }
 
-.navigation__contact_wrapper__col i {
-  margin-right: 5px;
-  color: white;
-}
-
 .street__and__code {
   font-style: normal;
   font-size: 9px;
+}
+
+.nav__svg__icon__top {
+  filter: brightness(0) invert(1);
+  cursor: pointer;
+  width: 15px;
+  height: 15px;
+}
+
+.diamond_icon {
+  margin-top: 5px !important;
 }

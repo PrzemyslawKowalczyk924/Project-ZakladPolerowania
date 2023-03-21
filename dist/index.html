@@ -7,10 +7,6 @@
         <meta name="author" content="Przemysław Kowalczyk">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Zakład Polerowania</title>
-        <script src="https://kit.fontawesome.com/959ffd2b57.js" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Open+Sans&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="./css/style.css">
     </head>
     <body>
@@ -18,7 +14,11 @@
             <div class="active-hamburger">Zakład Polerowania Metali<br>Anna Kowalczyk</div>
             <!-- Navigation links (hidden by default) -->
             <div id="hamburgerDropDown" class="hamburger__links">
-                <a class="navbar-brand" href="#main" aria-label="hamburger__logo"><i class="logo far fa-gem"></i></a>
+                <a class="navbar-brand" href="#main" aria-label="hamburger__logo">
+                    <div class="logo logo_in_dropdown">
+                        <img src="images/icons/diamond.svg" class="nav__svg__icon__top diamond_icon"/>
+                    </div>
+                </a>
                 <a class="start" href="#main"/>start</a>
                 <a class="start" href="#about"/>o nas</a>
                 <a class="start" href="#offer"/>oferta</a>
@@ -31,7 +31,7 @@
             </div>
             <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
             <button class="icon" aria-label="hamburger__button">
-                <i class="fa fa-bars"></i>
+                <img src="images/icons/bars-solid.svg" class="hamburger__icon" alt="hamburger photo" loading="lazy"/>
             </button>
         </div>
         <nav class="navigation">
@@ -39,28 +39,22 @@
                 <div class="navigation__contact_wrapper">
                     <div class="row">
                         <div class="navigation__contact_wrapper__col">
-                            <div class="row">
-                                <a href="#" aria-label="hamburger__logo"><i class="navigation__brand logo far fa-gem"></i></a>
-                                <a href="#">Zakład Polerowania Metali</br>Anna Kowalczyk</a>
-                            </div>
+                            <a href="#" class="logo" aria-label="hamburger__logo">
+                                <img src="images/icons/diamond.svg" class="nav__svg__icon__top diamond_icon" alt="diamond" loading="lazy"/>
+                            </a>
+                            <a href="#">Zakład Polerowania Metali</br>Anna Kowalczyk</a>
                         </div>
                         <div class="navigation__contact_wrapper__col">
-                            <div class="row">
-                                <i class="fas fa-map-marker-alt"></i>
-                                <address class="street__and__code">ul. Stalowa 3</br>26-600 Radom</address>
-                            </div>
+                            <img src="images/icons/location-dot-solid.svg" class="nav__svg__icon__top" alt="dot location" loading="lazy"/>
+                            <address class="street__and__code">ul. Stalowa 3</br>26-600 Radom</address>
                         </div>
                         <div class="navigation__contact_wrapper__col">
-                            <div class="row">
-                                <i class="fas fa-phone-alt"></i>
-                                <a href="tel: 572 286 790">572286790</a>
-                            </div>
+                            <img src="images/icons/phone-solid.svg" class="nav__svg__icon__top" alt="phone" loading="lazy"/>
+                            <a href="tel: 572 286 790">572286790</a>
                         </div>
                         <div class="navigation__contact_wrapper__col">
-                            <div class="row">
-                                <i class="far fa-envelope"></i>
-                                <a href="mailto:annakowalczyk1967@wp.pl">annakowalczyk1967@wp.pl</a>
-                            </div>
+                            <img src="images/icons/envelope-regular.svg" class="nav__svg__icon__top" alt="envelope" loading="lazy"/>
+                            <a href="mailto:annakowalczyk1967@wp.pl">annakowalczyk1967@wp.pl</a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +120,7 @@
                                     <a class="start single_in-cell_dropdown" href="#contact">
                                         <img class="nav-svg-icon" src="images/icons/add-contact.svg" alt="Contact" loading="lazy"/>
                                         kontakt
-                                </a>
+                                    </a>
                                 </li>
                             </ul>
                         </li>    
@@ -139,7 +133,9 @@
             <div id="main">
                 <header class="splash">
                     <div class="splash-inner">
-                        <i class="far fa-gem"></i>
+                        <div class="main__logo__wrapper">
+                            <img src="images/icons/diamond.svg" class="main__logo" alt="diamond" loading="lazy"/>
+                        </div>
                         <h1 class="page-title">Zakład Polerowania Metali</h1>
                         <h2 class="page-subtitle">Anna Kowalczyk</h2>
                     </div>
@@ -261,17 +257,17 @@
                     <div class="container">
                         <h2 class="section-title">Nasze atuty:</h2>
                         <div class="abilities">
-                            <p class="abi-description"><i class="fas fa-child"></i><span>Satysfakcja klienta naszym priorytetem</span></p>
-                            <p class="abi-description"><i class="fas fa-stopwatch"></i><span>Dyspozycyjność i elastyczność</span></p>
-                            <p class="abi-description"><i class="fas fa-lock-open"></i><span>Jesteśmy otwarci na zmiany</span></p>
-                            <p class="abi-description"><i class="fas fa-check-double"></i><span>Prowadzimy strategię Win to Win</span></p>
+                            <p class="abi-description"><img src="images/icons/child-reaching-solid.svg" alt="child" loading="lazy"/><span>Satysfakcja klienta naszym priorytetem</span></p>
+                            <p class="abi-description"><img src="images/icons/stopwatch-solid.svg" alt="stopwatch" loading="lazy"/><span>Dyspozycyjność i elastyczność</span></p>
+                            <p class="abi-description"><img src="images/icons/lock-open-solid.svg" alt="open lock" loading="lazy"/><span>Jesteśmy otwarci na zmiany</span></p>
+                            <p class="abi-description"><img src="images/icons/check-double-solid.svg" alt="double check" loading="lazy"/><span>Prowadzimy strategię Win to Win</span></p>
                         </div>
                     </div>
                 </section>
 
                 <section class="price">
                     <div class="container">
-                        <i class="fas fa-money-bill-wave"></i>
+                        <img src="images/icons/money-bill-wave-solid.svg" alt="dolar"></img>
                         <h2 class="section-title">Wycena detali:</h2>
                         <ol>
                             <li class="steps text-left clearfix"><p>Każde zamówienie rozpatrujemy z klientem idywindualnie.</p></li>
@@ -729,8 +725,8 @@
                         <div class="row contact-field">
                             <section class="col-6 companys-data-section">
                                 <div class="field row">
-                                    <div class="col-4 left">
-                                        <i class="logo far fa-gem"></i>
+                                    <div class="col-4 left logo">
+                                        <img src="images/icons/diamond.svg" class="diamond__icon__incontact" alt="diamong icon" loading="lazy"/>
                                     </div>
                                     <div class="col-8 right">
                                         <h3 class="companys-data-name">Zakład Polerowania Metali<br>Anna Kowalczyk</h3>
@@ -738,15 +734,15 @@
                                 </div>
                                 <div class="field row">
                                     <div class="col-4 left icon-in">
-                                        <i class="fas fa-map-marker-alt"></i>
+                                        <img src="images/icons/location-dot-solid.svg" class="contact__icons" alt="location dot" loading="lazy"/>
                                     </div>
                                     <div class="col-8 right">
                                         <p>ul.Stalowa 3, 26-600 Radom<br>Polska</p>
                                     </div>
                                 </div>
                                 <div class="field row">
-                                    <div class="col-4 left icon-in">
-                                        <i class="fas fa-phone-alt"></i>    
+                                    <div class="col-4 left icon-in"> 
+                                        <img src="images/icons/phone-solid.svg" class="contact__icons" alt="phone" loading="lazy"/>   
                                     </div>
                                     <div class="col-8 right">
                                         <a href="tel: 572 286 790">tel. 572286790</a>
@@ -754,7 +750,7 @@
                                 </div>
                                 <div class="field row">
                                     <div class="col-4 left icon-in">
-                                        <i class="far fa-envelope"></i>
+                                        <img src="images/icons/envelope-regular.svg" class="contact__icons" alt="envelope" loading="lazy"/> 
                                     </div>
                                     <div class="col-8 right">
                                         <a href="mailto:annakowalczyk1967@wp.pl">annakowalczyk1967@wp.pl</a>
@@ -768,13 +764,15 @@
                                         <input type="text" id="name" placeholder="Imię..." minlength="3">
                                     </div>
                                     <div class="field">
-                                        <input type="email" id="email" placeholder="E-mail...">
+                                        <input type="email" id="email" placeholder="E-mail..." required>
+                                        <div id="email-error"></div>
                                     </div>
                                     <div class="field">
                                         <input type="text" id="subject" placeholder="Temat..." minlength="3">
                                     </div>
                                     <div class="field">
-                                        <textarea id="message" placeholder="Wiadomość" minlength="3"></textarea>
+                                        <textarea id="message" placeholder="Wiadomość" minlength="3" required></textarea>
+                                        <div id="textArea-error"></div>
                                     </div>
                                     <button type="submit" class="btn btn-two">Wyślij</button>
                                     </form>
@@ -791,10 +789,9 @@
                 </p>
             </div>
         </footer>
-        <!-- <script src="https://kit.fontawesome.com/959ffd2b57.js" crossorigin="anonymous"></script> -->
         <script src="./js/script.js" type="module"></script>
         <script src="./js/app.js" type="module"></script>
         <script src="./js/form.js"></script>
-        <script src="./js//validate.js"></script>
+        <script src="./js/validate.js"></script>
     </body>
 </html>

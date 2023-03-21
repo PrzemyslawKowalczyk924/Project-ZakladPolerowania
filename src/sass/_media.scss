@@ -227,6 +227,10 @@
     padding: 48px 35px;
     font-size: 20px;
   }
+
+  .price img {
+    margin-bottom: 40px;
+  }
 }
 
 @media(min-width: 500px) and (max-width: 768px) {
@@ -304,21 +308,23 @@
       i {
         font-size: 15px;
       }
+      img {
+        width: 18px;
+        height: 18px;
+      }
     }
     .navigation__contact_wrapper__col:first-child {
       border-right: 1px solid white;
       border-top-right-radius: 35px;
       border-bottom-right-radius: 35px;
-      .row {
-        a:first-child {
-          margin-right: 0;
-          margin-left: 10px;
-          
-        }
-        a:last-child {
-          display: none;
-        }
-      } 
+      a:first-child {
+        margin-right: 10px;
+        margin-left: 10px;
+        
+      }
+      a:last-child {
+        display: none;
+      }
     }
     .navigation__contact_wrapper__col a {
       font-size: 9px;
@@ -337,10 +343,6 @@
     }
   }
 
-  //I left it at night at this moment
-  /* .navigation__contact_wrapper .row {
-    justify-content: end;
-  } */
   .single_cell_droppdown {
     border-left: 1px solid gray;
   }
@@ -351,7 +353,7 @@
 }
 
 @media (min-width: 532px) {
-  .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child a:last-child {
     display: block;
   }
 }
@@ -363,7 +365,7 @@
 }
 
 @media (min-width: 923px) {
-  .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child .row a:last-child {
+  .navigation__contact_wrapper .navigation__contact_wrapper__col:first-child a:last-child {
     display: none;
   }
   .navigation__contact_wrapper .navigation__contact_wrapper__col a, .street__and__code {
@@ -407,7 +409,7 @@
         display: none;
       }
     }
-    .navigation__contact_wrapper__col:nth-child(2) i {
+    .navigation__contact_wrapper__col:nth-child(2) img {
       display: none;
     }
   }
@@ -437,7 +439,7 @@
     width: 34px;
   }
 
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) img {
     display: block;
   }
   
@@ -448,7 +450,7 @@
   .navigation__contact_wrapper .row .navigation__contact_wrapper__col:first-child a:last-child {
     display: inline;
   }
-  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) i {
+  .navigation__contact_wrapper .row .navigation__contact_wrapper__col:nth-child(2) img {
     display: inline;
   }
   
@@ -456,7 +458,7 @@
     margin: auto;
   }
 
-  .navigation__contact_wrapper .row i {
+  .navigation__contact_wrapper .row img {
     font-size: 18px;
   }
   .navigation__contact_wrapper .navigation__contact_wrapper__col a, .street__and__code {

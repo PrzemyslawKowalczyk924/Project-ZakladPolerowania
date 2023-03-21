@@ -38,10 +38,6 @@
   padding-top: 0;
 }
 
-/*.companys-data-section .col-6, .col-3, .col-9 {
-  text-align-last: end;
-}*/
-
 .left {
   margin-top: auto;
   margin-bottom: auto;
@@ -58,7 +54,7 @@
 
 .companys-data-name {
   font-size: 17px;
-  margin-bottom: 0;
+  margin-left: 10px;
 }
 
 .col-6 .logo {
@@ -74,8 +70,14 @@
   width: 350px;
 }
 
+.contact__icons {
+  filter: contrast(0.5);
+  width: 25px;
+  height: 25px;
+  margin-top: 15px;
+}
+
 .form-section .section-title {
-  //margin-left: 95px;
   font-size: 22px;
   font-weight: bold;
   margin: 0 0 30px 0;
@@ -185,7 +187,3 @@ button:hover, input:hover, optgroup:hover, select:hover, textarea:hover {
   75%{ transform: scale(1.1); }
   100%{ transform: scale(1); }
 }
-
-/* 
-
- */
